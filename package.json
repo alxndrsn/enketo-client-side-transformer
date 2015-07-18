@@ -1,0 +1,28 @@
+{
+  "name": "enketo-client-side-transformer",
+  "version": "0.1.0",
+  "description": "Adaptation of enketo-transformer to work on popular browsers.",
+  "main": "src/enketo-client-side-transformer.js",
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start karma.conf.js --single-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/alxndrsn/enketo-client-side-transformer.git"
+  },
+  "author": "Alex",
+  "license": "Apache V2.0",
+  "bugs": {
+    "url": "https://github.com/alxndrsn/enketo-client-side-transformer/issues"
+  },
+  "homepage": "https://github.com/alxndrsn/enketo-client-side-transformer#readme",
+  "devDependencies": {
+    "chai": "^3.1.0",
+    "karma": "^0.13.2",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-mocha": "^0.2.0",
+    "mocha": "^2.2.5"
+  }
+}
