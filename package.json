@@ -4,7 +4,7 @@
   "description": "Adaptation of enketo-transformer to work on popular browsers.",
   "main": "src/enketo-client-side-transformer.js",
   "scripts": {
-    "test": "./node_modules/karma/bin/karma start karma.conf.js --single-run"
+    "test": "./run-tests"
   },
   "repository": {
     "type": "git",

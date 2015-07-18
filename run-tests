@@ -1,0 +1,25 @@
+#!/usr/bin/env bash -eu
+
+log() {
+	echo "[test] $@"
+}
+
+mkdir -p build/logs
+
+log "Generating XML with enketo-transformer reference implementation..."
+# TODO
+
+log "Generating XML in Chrome..."
+./node_modules/karma/bin/karma start karma.conf.js --single-run \
+		--browsers Chrome > build/logs/chrome.log
+
+log "Generating XML in Firefox..."
+./node_modules/karma/bin/karma start karma.conf.js --single-run \
+		--browsers Firefox > build/logs/firefox.log
+
+set +e
+# TODO diff chrome output with enketo-transformer output
+# TODO diff firefox output with enketo-transformer output
+set -e
+
+# TODO fail build if there are any differences between Chrome/Firefox and reference implementation
