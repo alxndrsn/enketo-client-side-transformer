@@ -11,11 +11,11 @@ log "Generating XML with enketo-transformer reference implementation..."
 
 log "Generating XML in Chrome..."
 ./node_modules/karma/bin/karma start karma.conf.js --single-run \
-		--browsers Chrome > build/logs/chrome.log
+		--browsers Chrome | tee build/logs/chrome.log
 
 log "Generating XML in Firefox..."
 ./node_modules/karma/bin/karma start karma.conf.js --single-run \
-		--browsers Firefox > build/logs/firefox.log
+		--browsers Firefox | tee build/logs/firefox.log
 
 set +e
 # TODO diff chrome output with enketo-transformer output

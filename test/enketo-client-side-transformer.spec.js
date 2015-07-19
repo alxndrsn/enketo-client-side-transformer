@@ -5,24 +5,45 @@ describe('enketo-client-side-transformer spec', function() {
     assert.ok(true);
   });
 
-  it('should have acccess to log4js', function() {
-    assert.ok(log4js);
-  });
-
   it('should launch the browser and output some logging', function() {
     console.log('[console.log()] Testing 1, 2, 3...');
     console.error('[console.error()] Testing 1, 2, 3...');
   });
 });
 
-describe('enketo-client-side-transformer', function() {
-  it('should be defined', function() {
-    assert.ok(enketo_client_side_transformer);
+describe('transformations', function() {
+  var enketo_client_side_transformer;
+  beforeEach(function() {
+    enketo_client_side_transformer = new EnketoClientSideTransformer();
   });
 
-  describe('#transform()', function() {
-    it('should be available', function() {
-      assert.typeOf(enketo_client_side_transformer.transform, 'function');
+  ['visit-report',
+      'hospital-survey'].forEach(function(xform) {
+    it('should be output for ' + xform, function(done) {
+      enketo_client_side_transformer.transform('/base/xforms/' + xform + '.xml',
+          function(transformed) {
+            console.log('[TRANSFORMED|'+xform+'] ' + JSON.stringify(transformed));
+            done();
+          });
+    });
+  });
+});
+
+describe('EnketoClientSideTransformer', function() {
+  it('should be a function', function() {
+    assert.typeOf(EnketoClientSideTransformer, 'function');
+  });
+
+  describe('instance', function() {
+    var enketo_client_side_transformer;
+    beforeEach(function() {
+      enketo_client_side_transformer = new EnketoClientSideTransformer();
+    });
+
+    describe('#transform()', function() {
+      it('should be available', function() {
+        assert.typeOf(enketo_client_side_transformer.transform, 'function');
+      });
     });
   });
 });

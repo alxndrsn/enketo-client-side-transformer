@@ -16,7 +16,10 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'src/**/*.js',
-      'test/**/*.js'
+      'test/**/*.js',
+      'lib/**/*.js',
+      { pattern:'xforms/**/*.xml', included:false },
+      { pattern:'xslt/**/*.xsl', included:false },
     ],
 
 
