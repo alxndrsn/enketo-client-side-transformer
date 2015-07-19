@@ -4,31 +4,34 @@ log() {
 	echo "[test] $@"
 }
 
+log "Cleaning build/ dir..."
+rm -rf build
 mkdir -p build/logs
+log "Cleaned."
 
 log "Generating XML with enketo-transformer reference implementation..."
 # TODO
 
-log "Generating XML in Chrome..."
-./node_modules/karma/bin/karma start karma.conf.js --single-run \
-		--browsers Chrome | tee build/logs/chrome.log
-mkdir -p build/generated/chrome
-echo '['$(fgrep '[TRANSFORMED]' build/logs/chrome.log | sed -E 's/^.*\[TRANSFORMED\] (.*)'"'"'$/\1,/')'{}]' | node -e '
-		var fs = require("fs"),
-		    stdin = fs.readFileSync("/dev/stdin").toString(),
-		    forms = JSON.parse(stdin);
-		forms.forEach(function(form) {
-			if(!form.name) return;
-			console.log("Processing: " + form.name);
-			fs.writeFileSync("build/generated/chrome/" + form.name + ".html.xml", form.content.html);
-			fs.writeFileSync("build/generated/chrome/" + form.name + ".model.xml", form.content.model);
-		});'
+generateXmlFor() {
+	local browser="$1"
+	log "Generating XML in ${browser}..."
+	./node_modules/karma/bin/karma start karma.conf.js --single-run \
+			--browsers ${browser} | tee build/logs/${browser}.log
+	mkdir -p build/generated/${browser}
+	echo '['$(fgrep '[TRANSFORMED]' build/logs/${browser}.log | sed -E 's/^.*\[TRANSFORMED\] (.*)'"'"'$/\1,/')'{}]' | node -e "
+			var fs = require('fs'),
+			    stdin = fs.readFileSync('/dev/stdin').toString(),
+			    forms = JSON.parse(stdin);
+			forms.forEach(function(form) {
+				if(!form.name) return;
+				console.log('Processing: ' + form.name);
+				fs.writeFileSync('build/generated/${browser}/' + form.name + '.html.xml', form.content.html);
+				fs.writeFileSync('build/generated/${browser}/' + form.name + '.model.xml', form.content.model);
+			});"
+}
 
-exit 0 # FIXME
-
-log "Generating XML in Firefox..."
-./node_modules/karma/bin/karma start karma.conf.js --single-run \
-		--browsers Firefox | tee build/logs/firefox.log
+generateXmlFor Chrome
+generateXmlFor Firefox
 
 set +e
 # TODO diff chrome output with enketo-transformer output
