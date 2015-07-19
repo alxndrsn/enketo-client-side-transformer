@@ -12,6 +12,19 @@ log "Generating XML with enketo-transformer reference implementation..."
 log "Generating XML in Chrome..."
 ./node_modules/karma/bin/karma start karma.conf.js --single-run \
 		--browsers Chrome | tee build/logs/chrome.log
+mkdir -p build/generated/chrome
+echo '['$(fgrep '[TRANSFORMED]' build/logs/chrome.log | sed -E 's/^.*\[TRANSFORMED\] (.*)'"'"'$/\1,/')'{}]' | node -e '
+		var fs = require("fs"),
+		    stdin = fs.readFileSync("/dev/stdin").toString(),
+		    forms = JSON.parse(stdin);
+		forms.forEach(function(form) {
+			if(!form.name) return;
+			console.log("Processing: " + form.name);
+			fs.writeFileSync("build/generated/chrome/" + form.name + ".html.xml", form.content.html);
+			fs.writeFileSync("build/generated/chrome/" + form.name + ".model.xml", form.content.model);
+		});'
+
+exit 0 # FIXME
 
 log "Generating XML in Firefox..."
 ./node_modules/karma/bin/karma start karma.conf.js --single-run \

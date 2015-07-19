@@ -22,7 +22,8 @@ describe('transformations', function() {
     it('should be output for ' + xform, function(done) {
       enketo_client_side_transformer.transform('/base/xforms/' + xform + '.xml',
           function(transformed) {
-            console.log('[TRANSFORMED|'+xform+'] ' + JSON.stringify(transformed));
+            console.log('[TRANSFORMED] ' + JSON.stringify({
+              name:xform, content:transformed }));
             done();
           });
     });
