@@ -17,8 +17,14 @@ describe('transformations', function() {
     enketo_client_side_transformer = new EnketoClientSideTransformer();
   });
 
-  ['visit-report',
-      'hospital-survey'].forEach(function(xform) {
+  [
+      'dosages',
+      'hospital-survey',
+      'households',
+      'pregnancy',
+      'treatments',
+      'visit-report',
+  ].forEach(function(xform) {
     it('should be output for ' + xform, function(done) {
       enketo_client_side_transformer.transform('/base/xforms/' + xform + '.xml',
           function(transformed) {

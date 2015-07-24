@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>New Pregnancy</h:title>
+    <model>
+      <instance>
+        <pregnancy id="PREG" version="2015-07-13 00:00:00">
+          <person_id>12345</person_id>
+          <risk_factors/>
+          <danger_signs/>
+          <group_lmp>
+            <lmp_method/>
+            <lmp_date/>
+            <lmp_approx/>
+          </group_lmp>
+          <lmp/>
+          <edd/>
+          <display_edd/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </pregnancy>
+      </instance>
+      <bind nodeset="/pregnancy/person_id" required="true()" type="string"/>
+      <bind nodeset="/pregnancy/risk_factors" required="true()" type="select"/>
+      <bind nodeset="/pregnancy/danger_signs" required="true()" type="select"/>
+      <bind nodeset="/pregnancy/group_lmp/lmp_method" required="true()" type="select1"/>
+      <bind constraint=".&lt;today()" jr:constraintMsg="Date must be before today" nodeset="/pregnancy/group_lmp/lmp_date" relevant="selected( /pregnancy/group_lmp/lmp_method ,'date')" required="true()" type="date"/>
+      <bind nodeset="/pregnancy/group_lmp/lmp_approx" relevant="selected( /pregnancy/group_lmp/lmp_method ,'approx')" required="true()" type="select1"/>
+      <bind calculate="if(selected( /pregnancy/group_lmp/lmp_method ,'date'),  /pregnancy/group_lmp/lmp_date ,date-time(decimal-date-time(today()- /pregnancy/group_lmp/lmp_approx )))" nodeset="/pregnancy/lmp" type="string"/>
+      <bind calculate="format-date-time(date-time(decimal-date-time( /pregnancy/lmp )+280),&quot;%b %e, %Y&quot;)" nodeset="/pregnancy/edd" type="string"/>
+      <bind nodeset="/pregnancy/display_edd" readonly="true()" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/pregnancy/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <input appearance="numbers" ref="/pregnancy/person_id">
+      <label>Person's ID</label>
+    </input>
+    <select ref="/pregnancy/risk_factors">
+      <label>Ask the mother if she has any of the following risk factors</label>
+      <item>
+        <label>Is this your first pregancy?</label>
+        <value>r1</value>
+      </item>
+      <item>
+        <label>How many children do you have? (Tick checkbox if more than 4)</label>
+        <value>r2</value>
+      </item>
+      <item>
+        <label>Was your last baby born less than 1 year before?</label>
+        <value>r3</value>
+      </item>
+      <item>
+        <label>Have you had any previous miscarriages?</label>
+        <value>r4</value>
+      </item>
+      <item>
+        <label>Haver you had any previous difficulties in childbirth?</label>
+        <value>r5</value>
+      </item>
+      <item>
+        <label>Do you have any of the following conditions? HIV, heart conditions, asthma, high blood pressure?</label>
+        <value>r6</value>
+      </item>
+    </select>
+    <select ref="/pregnancy/danger_signs">
+      <label>Review danger signs with the mother and remind her to look for these danger signs and go to a clinic health center immediately if she notices any of them</label>
+      <item>
+        <label>Pain, pressure or cramping in abdomen</label>
+        <value>d1</value>
+      </item>
+      <item>
+        <label>Bleeding or fluid leaking from vagina or vaginal discharge with bad odour</label>
+        <value>d2</value>
+      </item>
+      <item>
+        <label>Sever nausea or vomiting</label>
+        <value>d3</value>
+      </item>
+      <item>
+        <label>Fever of 38 degrees or higher</label>
+        <value>d4</value>
+      </item>
+      <item>
+        <label>Severe headache or new, blurry vision problems</label>
+        <value>d5</value>
+      </item>
+      <item>
+        <label>Sudden weight gain or severe selling of feet, ankles, face, or hands</label>
+        <value>d6</value>
+      </item>
+      <item>
+        <label>Less movement and kicking from the baby</label>
+        <value>d7</value>
+      </item>
+      <item>
+        <label>Blood in the urine or painful, burning urination</label>
+        <value>d8</value>
+      </item>
+      <item>
+        <label>Diarrhea that doesn't go away</label>
+        <value>d9</value>
+      </item>
+    </select>
+    <group appearance="field-list" ref="/pregnancy/group_lmp">
+      <label>Last menstrual period</label>
+      <select1 ref="/pregnancy/group_lmp/lmp_method">
+        <label>Date of last cycle unknown?</label>
+        <item>
+          <label>Use approximate date of last cycle</label>
+          <value>date</value>
+        </item>
+        <item>
+          <label>Date of last cycle unknown</label>
+          <value>approx</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy/group_lmp/lmp_date">
+        <label>Start date of last cycle</label>
+      </input>
+      <select1 ref="/pregnancy/group_lmp/lmp_approx">
+        <label>Approximate start date of last cycle</label>
+        <item>
+          <label>up to 2 months ago</label>
+          <value>61</value>
+        </item>
+        <item>
+          <label>up to 3 months ago</label>
+          <value>91</value>
+        </item>
+        <item>
+          <label>up to 4 months ago</label>
+          <value>122</value>
+        </item>
+        <item>
+          <label>beween 5 to 6 months ago</label>
+          <value>183</value>
+        </item>
+        <item>
+          <label>beween 7 to 8 months ago</label>
+          <value>244</value>
+        </item>
+      </select1>
+    </group>
+    <input ref="/pregnancy/display_edd">
+      <label>**The estimated delivery date is**
+<output value=" /pregnancy/edd "/>
+
+**Remind woman to**
+1. Take Iron Folate daily
+2. Attend regular ANC visits
+...
+    </input>
+  </h:body>
+</h:html>

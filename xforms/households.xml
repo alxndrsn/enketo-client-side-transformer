@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>New Household</h:title>
+    <model>
+      <instance>
+        <data id="HH" version="2015-07-07">
+          <household_head/>
+          <gender/>
+          <mobile_number/>
+          <age_youngest_child/>
+          <no_children_u5/>
+          <no_pregnant_women/>
+          <improved_cook_stove/>
+          <solar_light/>
+          <note_registration/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <bind nodeset="/data/household_head" required="true()" type="string"/>
+      <bind nodeset="/data/gender" required="true()" type="select1"/>
+      <bind nodeset="/data/mobile_number" required="true()" type="string"/>
+      <bind nodeset="/data/age_youngest_child" required="true()" type="int"/>
+      <bind nodeset="/data/no_children_u5" required="true()" type="int"/>
+      <bind nodeset="/data/no_pregnant_women" required="true()" type="int"/>
+      <bind nodeset="/data/improved_cook_stove" required="true()" type="select1"/>
+      <bind nodeset="/data/solar_light" required="true()" type="select1"/>
+      <bind nodeset="/data/note_registration" readonly="true()" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/data/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <input ref="/data/household_head">
+      <label>Head of Household</label>
+    </input>
+    <select1 ref="/data/gender">
+      <label>Gender</label>
+      <item>
+        <label>Female</label>
+        <value>female</value>
+      </item>
+      <item>
+        <label>Male</label>
+        <value>male</value>
+      </item>
+    </select1>
+    <input appearance="numbers" ref="/data/mobile_number">
+      <label>Mobile Number</label>
+    </input>
+    <input ref="/data/age_youngest_child">
+      <label>Age of Youngest Child</label>
+    </input>
+    <input ref="/data/no_children_u5">
+      <label>Number of Children Under 5 Years</label>
+    </input>
+    <input ref="/data/no_pregnant_women">
+      <label>Number of Pregnant Women</label>
+    </input>
+    <select1 ref="/data/improved_cook_stove">
+      <label>Do you own an improved cook stove?</label>
+      <item>
+        <label>Yes</label>
+        <value>yes</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>no</value>
+      </item>
+    </select1>
+    <select1 ref="/data/solar_light">
+      <label>Do you own a solar light?</label>
+      <item>
+        <label>Yes</label>
+        <value>yes</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>no</value>
+      </item>
+    </select1>
+    <input ref="/data/note_registration">
+      <label>Once you save the household you can add any women that are pregnant or children that need treatment</label>
+    </input>
+  </h:body>
+</h:html>

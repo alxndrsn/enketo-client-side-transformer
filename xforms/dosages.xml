@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Check Dosage</h:title>
+    <model>
+      <instance>
+        <dosages id="DSG" version="2015-07-22 00:00:00">
+          <health_need/>
+          <malaria_fever/>
+          <cough_pneumonia/>
+          <diarrhea_type/>
+          <pregnancy_need_type/>
+          <other_need_type/>
+          <patient_age/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </dosages>
+      </instance>
+      <bind nodeset="/dosages/health_need" required="true()" type="select1"/>
+      <bind nodeset="/dosages/malaria_fever" relevant=" /dosages/health_need  = 'malaria_fever_pain_need'" required="true()" type="select1"/>
+      <bind nodeset="/dosages/cough_pneumonia" relevant=" /dosages/health_need  = 'cough_pneumonia_need'" required="true()" type="select1"/>
+      <bind nodeset="/dosages/diarrhea_type" relevant=" /dosages/health_need  = 'diarrhea_need'" required="true()" type="select1"/>
+      <bind nodeset="/dosages/pregnancy_need_type" relevant=" /dosages/health_need  = 'pregnancy_need'" required="true()" type="select1"/>
+      <bind nodeset="/dosages/other_need_type" relevant=" /dosages/health_need  = 'other_need'" required="true()" type="select1"/>
+      <bind nodeset="/dosages/patient_age" required="true()" type="int"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/dosages/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <select1 ref="/dosages/health_need">
+      <label>Select Health Need</label>
+      <item>
+        <label>Malaria / Fever and Pain</label>
+        <value>malaria_fever_pain_need</value>
+      </item>
+      <item>
+        <label>Cough and Pneumonia</label>
+        <value>cough_pneumonia_need</value>
+      </item>
+      <item>
+        <label>Diarrhea</label>
+        <value>diarrhea_need</value>
+      </item>
+      <item>
+        <label>Pregnancy</label>
+        <value>pregnancy_need</value>
+      </item>
+      <item>
+        <label>Other Health Issues</label>
+        <value>other_need</value>
+      </item>
+    </select1>
+    <select1 ref="/dosages/malaria_fever">
+      <label>Malaria / Fever and Pain</label>
+      <item>
+        <label>Malaria Treatment</label>
+        <value>malaria_treatment</value>
+      </item>
+      <item>
+        <label>Fever and/or pain</label>
+        <value>fever_pain</value>
+      </item>
+    </select1>
+    <select1 ref="/dosages/cough_pneumonia">
+      <label>Cough and Pneumonia</label>
+      <item>
+        <label>Cough</label>
+        <value>cough</value>
+      </item>
+      <item>
+        <label>Severe Cough with Fast Breathing</label>
+        <value>severe_cough_fast_breathing</value>
+      </item>
+      <item>
+        <label>Severe Cough with Indrawn Chest</label>
+        <value>severe_cough_indrawn_chest</value>
+      </item>
+    </select1>
+    <select1 ref="/dosages/diarrhea_type">
+      <label>Diarrhea</label>
+      <item>
+        <label>Diarrhea/Dehydration</label>
+        <value>diarrhea_dehydration</value>
+      </item>
+      <item>
+        <label>Intestinal Worms</label>
+        <value>intestinal_worms</value>
+      </item>
+    </select1>
+    <select1 ref="/dosages/pregnancy_need_type">
+      <label>Pregnancy</label>
+      <item>
+        <label>Malaria Prevention</label>
+        <value>malaria_prevention</value>
+      </item>
+      <item>
+        <label>Supplements</label>
+        <value>supplements</value>
+      </item>
+      <item>
+        <label>Oral Contraceptives</label>
+        <value>oral_contraceptives</value>
+      </item>
+      <item>
+        <label>Yeast Infection</label>
+        <value>yeast_infection</value>
+      </item>
+    </select1>
+    <select1 ref="/dosages/other_need_type">
+      <label>Other Health Issues</label>
+      <item>
+        <label>Red (Pink) Eye</label>
+        <value>red_pink_eye</value>
+      </item>
+      <item>
+        <label>Ear Pain</label>
+        <value>ear_pain</value>
+      </item>
+      <item>
+        <label>Ringworms / Scabies</label>
+        <value>ringworms_scabies</value>
+      </item>
+      <item>
+        <label>Heartburn, Peptic Ulcer</label>
+        <value>heartburn_peptic_ulcer</value>
+      </item>
+    </select1>
+    <input ref="/dosages/patient_age">
+      <label>How old is the patient?</label>
+    </input>
+  </h:body>
+</h:html>
