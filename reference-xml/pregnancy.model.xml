@@ -1,0 +1,20 @@
+<model>
+    <instance>
+        <pregnancy id="PREG" version="2015-07-13 00:00:00">
+          <person_id>12345</person_id>
+          <risk_factors/>
+          <danger_signs/>
+          <group_lmp>
+            <lmp_method/>
+            <lmp_date/>
+            <lmp_approx/>
+          </group_lmp>
+          <lmp/>
+          <edd/>
+          <display_edd/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </pregnancy>
+      </instance>
+  </model>
