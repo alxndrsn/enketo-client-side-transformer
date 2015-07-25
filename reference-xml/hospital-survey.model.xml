@@ -1,0 +1,61 @@
+<model>
+    <instance>
+        <hospital id="EDCD_H01" version="2015-06-17">
+          <report_date tag="date"/>
+          <select_facility tag="hs"/>
+          <group_facility>
+            <facility_code_list tag="hf"/>
+            <facility_code_other tag="hfo"/>
+            <facility_code tag="hfc"/>
+          </group_facility>
+          <group_all_treated>
+            <opd_patients_under_five tag="au5"/>
+            <opd_patients_five_over tag="a5o"/>
+          </group_all_treated>
+          <group_influenza>
+            <influenza_under_five tag="iu5"/>
+            <influenza_five_over tag="i5o"/>
+          </group_influenza>
+          <group_respiratory>
+            <respiratory_under_five tag="ru5"/>
+            <respiratory_five_over tag="r5o"/>
+          </group_respiratory>
+          <group_watery_diarrhoea>
+            <watery_diarrhoea_under_five tag="wu5"/>
+            <watery_diarrhoea_five_over tag="w5o"/>
+          </group_watery_diarrhoea>
+          <group_bloody_diarrhoea>
+            <bloody_diarrhoea_under_five tag="bu5"/>
+            <bloody_diarrhoea_five_over tag="b5o"/>
+            <suspected_cholera tag="c5o"/>
+          </group_bloody_diarrhoea>
+          <group_fever_jaundice>
+            <fever_jaundice_under_five tag="fju5"/>
+            <fever_jaundice_five_over tag="fj5o"/>
+          </group_fever_jaundice>
+          <group_fever_rash>
+            <fever_rash_under_five tag="fru5"/>
+            <fever_rash_five_over tag="fr5o"/>
+          </group_fever_rash>
+          <group_fever_other>
+            <fever_other_under_five tag="fou5"/>
+            <fever_other_five_over tag="fo5o"/>
+          </group_fever_other>
+          <note_outbreak/>
+          <phonenumber/>
+          <imei/>
+          <subscriberID/>
+          <start/>
+          <end/>
+          <meta>
+            <start tag="m_st"/>
+            <end tag="m_et"/>
+            <deviceID tag="m_d"/>
+            <subscriberID tag="m_s"/>
+            <phonenumber tag="m_p"/>
+            <instanceID tag="m_i"/>
+            <instanceName tag="m_n"/>
+          </meta>
+        </hospital>
+      </instance>
+  </model>

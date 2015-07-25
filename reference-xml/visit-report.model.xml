@@ -1,0 +1,16 @@
+<model>
+    <instance>
+        <data id="V" version="2015-06-05">
+          <pregnancy_id tag="id"/>
+          <meta>
+            <start tag="m_st"/>
+            <end tag="m_et"/>
+            <phonenumber tag="m_p"/>
+            <deviceID tag="m_d"/>
+            <subscriberID tag="m_s"/>
+            <instanceID tag="m_i"/>
+            <instanceName tag="m_n"/>
+          </meta>
+        </data>
+      </instance>
+  </model>

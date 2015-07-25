@@ -1,0 +1,16 @@
+<model>
+    <instance>
+        <dosages id="DSG" version="2015-07-22 00:00:00">
+          <health_need/>
+          <malaria_fever/>
+          <cough_pneumonia/>
+          <diarrhea_type/>
+          <pregnancy_need_type/>
+          <other_need_type/>
+          <patient_age/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </dosages>
+      </instance>
+  </model>

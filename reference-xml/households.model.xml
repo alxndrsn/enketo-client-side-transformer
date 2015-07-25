@@ -1,0 +1,18 @@
+<model>
+    <instance>
+        <data id="HH" version="2015-07-07">
+          <household_head/>
+          <gender/>
+          <mobile_number/>
+          <age_youngest_child/>
+          <no_children_u5/>
+          <no_pregnant_women/>
+          <improved_cook_stove/>
+          <solar_light/>
+          <note_registration/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+  </model>

@@ -1,0 +1,30 @@
+#!/usr/bin/env bash -eu
+dir="$(pwd)/reference-xml"
+url="http://raw.githubusercontent.com/alxndrsn/enketo-client-side-transformer/master/xforms"
+
+log() {
+	echo "[$0] $@"
+}
+
+log "Cleaning..."
+rm -rf $dir || true
+mkdir $dir
+
+cd xforms
+for src in *.xml; do
+	form="${src%.*}"
+	log "Processing ${form}..."
+	curl "http://xslt-dev.enketo.org/transform?xform=${url}/${src}" | node -e "
+		try {
+		  var fs = require('fs'),
+		      stdin = fs.readFileSync('/dev/stdin').toString(),
+		      form = JSON.parse(stdin);
+		  fs.writeFileSync('${dir}/${form}.html.xml', form.html);
+		  fs.writeFileSync('${dir}/${form}.model.xml', form.model);
+		} catch(e) {
+		  console.log('WARN | Failed to process ${form}: ' + e);
+		}
+	"
+done
+
+log "Complete."
