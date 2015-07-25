@@ -22,7 +22,6 @@ describe('transformations', function() {
       'hospital-survey',
       'households',
       'pregnancy',
-      'treatments',
       'visit-report',
   ].forEach(function(xform) {
     it('should be output for ' + xform, function(done) {
