@@ -19,3 +19,13 @@ et-docker-process-xforms-osx:
 		enketo-transformer \
 		./process-xforms \
 			${XFORMS_DOCKER} ${TRANSFORM_TARGET_DOCKER}
+
+et-service:
+	cd enketo-transformer && docker run -d \
+		-p 8085:8085 \
+		-w /enketo-transformer \
+		enketo-transformer \
+		bash -c \
+		"git checkout 1.2.4 && npm start"
+	echo "enketo-transformer available at: "\
+		"http://$$(boot2docker ip):8085/transform"
