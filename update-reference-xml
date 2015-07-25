@@ -19,7 +19,7 @@ for src in *.xml; do
 		  var fs = require('fs'),
 		      stdin = fs.readFileSync('/dev/stdin').toString(),
 		      form = JSON.parse(stdin);
-		  fs.writeFileSync('${dir}/${form}.html.xml', form.html);
+		  fs.writeFileSync('${dir}/${form}.html.xml', form.form);
 		  fs.writeFileSync('${dir}/${form}.model.xml', form.model);
 		} catch(e) {
 		  console.log('WARN | Failed to process ${form}: ' + e);
