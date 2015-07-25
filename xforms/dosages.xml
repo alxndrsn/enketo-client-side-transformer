@@ -18,11 +18,11 @@
         </dosages>
       </instance>
       <bind nodeset="/dosages/health_need" required="true()" type="select1"/>
-      <bind nodeset="/dosages/malaria_fever" relevant=" /dosages/health_need  = 'malaria_fever_pain_need'" required="true()" type="select1"/>
-      <bind nodeset="/dosages/cough_pneumonia" relevant=" /dosages/health_need  = 'cough_pneumonia_need'" required="true()" type="select1"/>
-      <bind nodeset="/dosages/diarrhea_type" relevant=" /dosages/health_need  = 'diarrhea_need'" required="true()" type="select1"/>
-      <bind nodeset="/dosages/pregnancy_need_type" relevant=" /dosages/health_need  = 'pregnancy_need'" required="true()" type="select1"/>
-      <bind nodeset="/dosages/other_need_type" relevant=" /dosages/health_need  = 'other_need'" required="true()" type="select1"/>
+      <bind nodeset="/dosages/malaria_fever" relevant=" /dosages/health_need = 'malaria_fever_pain_need'" required="true()" type="select1"/>
+      <bind nodeset="/dosages/cough_pneumonia" relevant=" /dosages/health_need = 'cough_pneumonia_need'" required="true()" type="select1"/>
+      <bind nodeset="/dosages/diarrhea_type" relevant=" /dosages/health_need = 'diarrhea_need'" required="true()" type="select1"/>
+      <bind nodeset="/dosages/pregnancy_need_type" relevant=" /dosages/health_need = 'pregnancy_need'" required="true()" type="select1"/>
+      <bind nodeset="/dosages/other_need_type" relevant=" /dosages/health_need = 'other_need'" required="true()" type="select1"/>
       <bind nodeset="/dosages/patient_age" required="true()" type="int"/>
       <bind calculate="concat('uuid:', uuid())" nodeset="/dosages/meta/instanceID" readonly="true()" type="string"/>
     </model>
