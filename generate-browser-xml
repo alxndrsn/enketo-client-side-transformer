@@ -1,0 +1,39 @@
+#!/usr/bin/env bash -eu
+
+browsers="Firefox Chrome"
+
+log() {
+	echo "[test] $@"
+}
+
+log "Cleaning build/ dir..."
+rm -rf build
+mkdir -p build/logs
+log "Cleaned."
+
+log "Generating XML with enketo-transformer reference implementation..."
+# TODO
+
+generateXmlFor() {
+	local browser="$1"
+	log "Generating XML in ${browser}..."
+	./node_modules/karma/bin/karma start karma.conf.js --single-run \
+			--browsers ${browser} | tee build/logs/${browser}.log
+	mkdir -p build/generated/${browser}
+	echo '['$(fgrep '[TRANSFORMED]' build/logs/${browser}.log | sed -E 's/^.*\[TRANSFORMED\] (.*)'"'"'$/\1,/')'{}]' | node -e "
+			var fs = require('fs'),
+			    stdin = fs.readFileSync('/dev/stdin').toString(),
+			    forms = JSON.parse(stdin);
+			forms.forEach(function(form) {
+				if(!form.name) return;
+				console.log('Processing: ' + form.name);
+				fs.writeFileSync('build/generated/${browser}/' + form.name + '.html.xml', form.content.html);
+				fs.writeFileSync('build/generated/${browser}/' + form.name + '.model.xml', form.content.model);
+			});"
+}
+
+log "Transforming XML in browsers..."
+for browser in $browsers; do
+	generateXmlFor $browser
+done
+log "Browser transforms complete."
