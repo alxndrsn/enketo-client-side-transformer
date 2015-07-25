@@ -2,7 +2,7 @@
 browsers="Firefox Chrome"
 
 log() {
-	echo "[test] $@"
+	echo "[generate] $@"
 }
 
 log "Cleaning build/ dir..."
