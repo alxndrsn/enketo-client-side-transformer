@@ -24,7 +24,7 @@
       <bind jr:preload="property" jr:preloadParams="uri:deviceid" nodeset="/data/meta/deviceID" type="string"/>
       <bind jr:preload="property" jr:preloadParams="phonenumber" nodeset="/data/meta/phonenumber" type="string"/>
       <bind calculate="concat('uuid:', uuid())" nodeset="/data/meta/instanceID" readonly="true()" type="string"/>
-      <bind calculate="concat('Visit: ',  /data/pregnancy_id )" nodeset="/data/meta/instanceName" type="string"/>
+      <bind calculate="concat('Visit: ', /data/pregnancy_id )" nodeset="/data/meta/instanceName" type="string"/>
     </model>
   </h:head>
   <h:body>

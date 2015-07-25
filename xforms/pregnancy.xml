@@ -27,7 +27,7 @@
       <bind nodeset="/pregnancy/group_lmp/lmp_method" required="true()" type="select1"/>
       <bind constraint=".&lt;today()" jr:constraintMsg="Date must be before today" nodeset="/pregnancy/group_lmp/lmp_date" relevant="selected( /pregnancy/group_lmp/lmp_method ,'date')" required="true()" type="date"/>
       <bind nodeset="/pregnancy/group_lmp/lmp_approx" relevant="selected( /pregnancy/group_lmp/lmp_method ,'approx')" required="true()" type="select1"/>
-      <bind calculate="if(selected( /pregnancy/group_lmp/lmp_method ,'date'),  /pregnancy/group_lmp/lmp_date ,date-time(decimal-date-time(today()- /pregnancy/group_lmp/lmp_approx )))" nodeset="/pregnancy/lmp" type="string"/>
+      <bind calculate="if(selected( /pregnancy/group_lmp/lmp_method ,'date'), /pregnancy/group_lmp/lmp_date ,date-time(decimal-date-time(today()- /pregnancy/group_lmp/lmp_approx )))" nodeset="/pregnancy/lmp" type="string"/>
       <bind calculate="format-date-time(date-time(decimal-date-time( /pregnancy/lmp )+280),&quot;%b %e, %Y&quot;)" nodeset="/pregnancy/edd" type="string"/>
       <bind nodeset="/pregnancy/display_edd" readonly="true()" type="string"/>
       <bind calculate="concat('uuid:', uuid())" nodeset="/pregnancy/meta/instanceID" readonly="true()" type="string"/>

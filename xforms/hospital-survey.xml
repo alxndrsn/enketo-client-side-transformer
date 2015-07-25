@@ -106,7 +106,7 @@ and sum of cases cannot be greater than all new patients 5 years and over" nodes
       <bind jr:preload="property" jr:preloadParams="uri:subscriberid" nodeset="/hospital/meta/subscriberID" type="string"/>
       <bind jr:preload="property" jr:preloadParams="phonenumber" nodeset="/hospital/meta/phonenumber" type="string"/>
       <bind calculate="concat('uuid:', uuid())" nodeset="/hospital/meta/instanceID" readonly="true()" type="string"/>
-      <bind calculate="concat('Daily Hospital Surveillance - ',  /hospital/report_date )" nodeset="/hospital/meta/instanceName" type="string"/>
+      <bind calculate="concat('Daily Hospital Surveillance - ', /hospital/report_date )" nodeset="/hospital/meta/instanceName" type="string"/>
     </model>
   </h:head>
   <h:body class="pages">
