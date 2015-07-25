@@ -17,7 +17,7 @@ generateXmlFor() {
 	local browser="$1"
 	log "Generating XML in ${browser}..."
 	./node_modules/karma/bin/karma start karma.conf.js --single-run \
-			--browsers ${browser} > build/logs/${browser}.log
+			--browsers ${browser} | tee build/logs/${browser}.log
 	mkdir -p build/generated/${browser}
 	echo '['$(fgrep '[TRANSFORMED]' build/logs/${browser}.log | sed -E 's/^.*\[TRANSFORMED\] (.*)'"'"'$/\1,/')'{}]' | node -e "
 			var fs = require('fs'),
