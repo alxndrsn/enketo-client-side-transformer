@@ -1,0 +1,22 @@
+#!/usr/bin/env bash -eu
+
+browsers="Firefox Chrome"
+
+log() {
+	echo "[test] $@"
+}
+
+log "Comparing generated XML with reference XML..."
+set +e
+cd reference-xml
+for reference in *.xml; do
+	for browser in $browsers; do
+		# diff generated output with enketo-transformer output
+		diff <(xmllint --format $reference) <(xmllint --format ../build/generated/$browser/$reference)
+	done
+done
+set -e
+log "Comparison complete."
+
+# TODO fail build if there are any differences between Chrome/Firefox and reference implementation
+
