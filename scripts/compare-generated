@@ -1,0 +1,16 @@
+#!/bin/bash -eu
+one="$1"
+two="$2"
+. scripts/lib.bash
+
+log "Comparing generated output from ${one} vs ${two}..."
+
+cd "build/generated/${one}"
+
+for file in *.xml; do
+	cd ..
+	diff_xml "${one}/${file}" "${two}/${file}"
+	cd -
+done
+
+log "Completed."
