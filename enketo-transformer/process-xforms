@@ -1,0 +1,51 @@
+#!/usr/bin/env node
+var args = process.argv.slice(2),
+    srcDir = args[0],
+    targetDir = args[1],
+
+    log = function(m) { console.log('[process-xforms] LOG | ' + m); },
+
+    fs = require('fs'),
+    transformer = require('enketo-transformer'),
+    Q = require('q'),
+
+    promises = [];
+
+log('Called with args: ' + args);
+
+log('Processing from: ' + srcDir);
+log('Processing to: ' + targetDir);
+
+fs.readdirSync(srcDir).forEach(function(file) {
+    log('Processing: ' + file + '...');
+    try {
+        var p = transformer.transform({
+            xform: fs.readFileSync(srcDir + '/' + file)
+        }).then(function(result) {
+          log('Processed.  Writing to files...');
+          fs.writeFileSync(targetDir + '/' + file.
+                replace(/.xml$/, '.form.xml'), result.form);
+          fs.writeFileSync(targetDir + '/' + file.
+                replace(/.xml$/, '.model.xml'), result.model);
+          log('Processing completed: ' + file);
+        }).catch(function(e) {
+            log('Caught error: ' + e);
+            log(e);
+        });
+        log('Pushing promise...');
+        promises.push(p);
+    } catch(e) {
+      log('Failed to process "' + file + '" due to error: ' + e);
+    }
+    log('next...');
+});
+
+log('Waiting for processing to complete...');
+
+Q.all(promises).then(function() {
+    log('Completed.  Please check "' + targetDir + '" for generated forms.');
+});
+
+promises.forEach(function(p) { p.done(); });
+
+log('Complete?');

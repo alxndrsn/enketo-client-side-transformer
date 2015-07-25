@@ -1,0 +1,16 @@
+{
+  "name": "xsl-transforms-with-enketo-transformer",
+  "version": "0.1.0",
+  "description": "",
+  "main": "transform.js",
+  "scripts": {
+    "test": "there are no tests"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "libxslt": "^0.5.2",
+    "enketo-transformer": "^1.2.4",
+    "q": "2.0.x"
+  }
+}
