@@ -1,4 +1,4 @@
-#!/usr/bin/env bash -eu
+#!/bin/bash -eu
 dir="$(pwd)/reference-xml"
 url="http://raw.githubusercontent.com/alxndrsn/enketo-client-side-transformer/master/xforms"
 

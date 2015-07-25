@@ -1,5 +1,4 @@
-#!/usr/bin/env bash -eu
-
+#!/bin/bash -eu
 browsers="Firefox Chrome"
 
 log() {
