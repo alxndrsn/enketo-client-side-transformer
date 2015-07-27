@@ -13,3 +13,4 @@ Adaptation of enketo-transformer to work on popular browsers.
 ## CLI Tools
 
 * `xmllint`
+* `npm`

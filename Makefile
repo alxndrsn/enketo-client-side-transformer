@@ -2,8 +2,10 @@ ifndef BROWSERS
 BROWSERS = Chrome Firefox
 endif
 
-default: generate compare
+default: npm generate compare
 
+npm:
+	npm install
 generate:
 	./scripts/generate-browser-xml ${BROWSERS}
 compare:
