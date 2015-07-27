@@ -65,16 +65,16 @@ XSLT Stylesheet that transforms OpenRosa style (X)Forms into valid HTMl5 forms
 
     <xsl:template match="/">
         <xsl:if test="not(function-available('exsl:node-set'))">
-            <xsl:comment>FATAL ERROR: exsl:node-set function is not available in this XSLT processor</xsl:comment>
+            <xsl:comment>WARNING: exsl:node-set function is not available in this XSLT processor</xsl:comment>
         </xsl:if>
         <xsl:if test="not(function-available('str:replace'))">
-            <xsl:comment>FATAL ERROR: str:replace function is not available in this XSLT processor</xsl:comment>
+            <xsl:comment>WARNING: str:replace function is not available in this XSLT processor</xsl:comment>
         </xsl:if>
         <xsl:if test="not(function-available('dyn:evaluate'))">
-            <xsl:comment>FATAL ERROR: dyn:evaluate function is not available in this XSLT processor</xsl:comment>
+            <xsl:comment>WARNING: dyn:evaluate function is not available in this XSLT processor</xsl:comment>
         </xsl:if>
         <xsl:if test="not(function-available('str:tokenize'))">
-            <xsl:comment>FATAL ERROR: str:tokenize function is not available in this XSLT processor</xsl:comment>
+            <xsl:comment>WARNING: str:tokenize function is not available in this XSLT processor</xsl:comment>
         </xsl:if>
         <xsl:for-each select="/h:html/h:head/xf:model/xf:bind">
             <xsl:if test="not(substring(./@nodeset, 1, 1) = '/')">
