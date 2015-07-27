@@ -19,16 +19,20 @@ generateXmlFor() {
 	./node_modules/karma/bin/karma start karma.conf.js --single-run \
 			--browsers ${browser} > build/logs/${browser}.log
 	mkdir -p build/generated/${browser}
-	echo '['$(fgrep '[TRANSFORMED]' build/logs/${browser}.log | sed -E 's/^.*\[TRANSFORMED\] (.*)'"'"'$/\1,/')'{}]' | node -e "
-			var fs = require('fs'),
-			    stdin = fs.readFileSync('/dev/stdin').toString(),
-			    forms = JSON.parse(stdin);
-			forms.forEach(function(form) {
-				if(!form.name) return;
-				console.log('Processing: ' + form.name);
-				fs.writeFileSync('build/generated/${browser}/' + form.name + '.html.xml', form.content.html);
-				fs.writeFileSync('build/generated/${browser}/' + form.name + '.model.xml', form.content.model);
-			});"
+	echo '['$(fgrep '[TRANSFORMED]' build/logs/${browser}.log | \
+		sed -E -e 's/^.*\[TRANSFORMED\] //' -e "s/'$/,/")'{}]' > \
+			"build/$browser.transformed.json"
+	node -e "
+		var fs = require('fs'),
+		    json = fs.readFileSync('build/$browser.transformed.json').toString(),
+		    forms;
+		    forms = JSON.parse(json);
+		forms.forEach(function(form) {
+			if(!form.name) return;
+			console.log('Processing: ' + form.name);
+			fs.writeFileSync('build/generated/${browser}/' + form.name + '.html.xml', form.content.html);
+			fs.writeFileSync('build/generated/${browser}/' + form.name + '.model.xml', form.content.model);
+		});"
 }
 
 log "Transforming XML in browsers..."

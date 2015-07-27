@@ -1,0 +1,29 @@
+<model>
+    <instance>
+        <treatments id="PNT" version="2015-07-22 00:00:00">
+          <group_cough>
+            <patient_coughs/>
+            <coughing_duration/>
+            <chest_indrawing/>
+          </group_cough>
+          <group_breathing>
+            <fast_breathing/>
+            <breath_count/>
+          </group_breathing>
+          <group_fever>
+            <patient_fever/>
+            <fever_duration/>
+            <mrdt_results/>
+          </group_fever>
+          <group_diarrhea>
+            <patient_diarrhea/>
+            <diarrhea_duration/>
+            <diarrhea_blood/>
+          </group_diarrhea>
+          <danger_signs/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </treatments>
+      </instance>
+  </model>
