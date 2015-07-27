@@ -335,13 +335,20 @@ XSLT Stylesheet that transforms OpenRosa style (X)Forms into valid HTMl5 forms
 
     <xsl:template name="appearance">
         <xsl:if test="@appearance">
-            <!-- str:tokenize browser support is poor (only Firefox) -->
-            <xsl:if test="function-available('str:tokenize')">
-                <xsl:variable name="appearances" select="str:tokenize(@appearance)" />
-                <xsl:for-each select="exsl:node-set($appearances)">
-                    <xsl:value-of select="concat('or-appearance-', normalize-space(translate(., $upper-case, $lower-case)), ' ')"/>
-                </xsl:for-each>
-            </xsl:if>
+            <xsl:choose>
+              <!-- str:tokenize browser support is poor (only Firefox) -->
+              <xsl:when test="function-available('str:tokenize')">
+                  <xsl:variable name="appearances" select="str:tokenize(@appearance)" />
+                  <xsl:for-each select="exsl:node-set($appearances)">
+                      <xsl:value-of select="concat('or-appearance-', normalize-space(translate(., $upper-case, $lower-case)), ' ')"/>
+                  </xsl:for-each>
+              </xsl:when>
+              <xsl:otherwise>
+                  <!-- so far in examples, @appearance has never had more than a single value, so it's safe just to use its value
+                       directly.  We appened a `space` character to maintain consistency with the output of `str:tokenize`. -->
+                  <xsl:value-of select="concat(concat('or-appearance-', @appearance), ' ')"/>
+              </xsl:otherwise>
+            </xsl:choose>
         </xsl:if>
     </xsl:template>
 
