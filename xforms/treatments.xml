@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Treatment</h:title>
+    <model>
+      <instance>
+        <treatments id="PNT" version="2015-07-22 00:00:00">
+          <group_cough>
+            <patient_coughs/>
+            <coughing_duration/>
+            <chest_indrawing/>
+          </group_cough>
+          <group_breathing>
+            <fast_breathing/>
+            <breath_count/>
+          </group_breathing>
+          <group_fever>
+            <patient_fever/>
+            <fever_duration/>
+            <mrdt_results/>
+          </group_fever>
+          <group_diarrhea>
+            <patient_diarrhea/>
+            <diarrhea_duration/>
+            <diarrhea_blood/>
+          </group_diarrhea>
+          <danger_signs/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </treatments>
+      </instance>
+      <bind nodeset="/treatments/group_cough/patient_coughs" required="true()" type="select1"/>
+      <bind nodeset="/treatments/group_cough/coughing_duration" relevant=" /treatments/group_cough/patient_coughs  = 'Yes'" required="true()" type="select1"/>
+      <bind nodeset="/treatments/group_cough/chest_indrawing" required="true()" type="select1"/>
+      <bind nodeset="/treatments/group_breathing/fast_breathing" required="true()" type="select1"/>
+      <bind nodeset="/treatments/group_breathing/breath_count" type="int"/>
+      <bind nodeset="/treatments/group_fever/patient_fever" required="true()" type="select1"/>
+      <bind nodeset="/treatments/group_fever/fever_duration" relevant=" /treatments/group_fever/patient_fever  = 'Yes'" required="true()" type="select1"/>
+      <bind nodeset="/treatments/group_fever/mrdt_results" relevant=" /treatments/group_fever/patient_fever  = 'Yes'" required="true()" type="select1"/>
+      <bind nodeset="/treatments/group_diarrhea/patient_diarrhea" required="true()" type="select1"/>
+      <bind nodeset="/treatments/group_diarrhea/diarrhea_duration" relevant=" /treatments/group_diarrhea/patient_diarrhea  = 'Yes'" required="true()" type="select1"/>
+      <bind nodeset="/treatments/group_diarrhea/diarrhea_blood" relevant=" /treatments/group_diarrhea/patient_diarrhea  = 'Yes'" required="true()" type="select1"/>
+      <bind nodeset="/treatments/danger_signs" type="select"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/treatments/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/treatments/group_cough">
+      <label>Cough</label>
+      <select1 ref="/treatments/group_cough/patient_coughs">
+        <label>Does the patient have cough?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/treatments/group_cough/coughing_duration">
+        <label>For how long has the child had coughing?</label>
+        <item>
+          <label>Less than a week</label>
+          <value>c1</value>
+        </item>
+        <item>
+          <label>1 Week</label>
+          <value>c2</value>
+        </item>
+        <item>
+          <label>2 Weeks</label>
+          <value>c3</value>
+        </item>
+        <item>
+          <label>3 Weeks +</label>
+          <value>c4</value>
+        </item>
+      </select1>
+      <select1 ref="/treatments/group_cough/chest_indrawing">
+        <label>Chest Indrawing</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/treatments/group_breathing">
+      <label>Breathing</label>
+      <select1 ref="/treatments/group_breathing/fast_breathing">
+        <label>Fast Breathing?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/treatments/group_breathing/breath_count">
+        <label>Breaths per minute</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/treatments/group_fever">
+      <label>Fever</label>
+      <select1 ref="/treatments/group_fever/patient_fever">
+        <label>Does the patient have fever?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/treatments/group_fever/fever_duration">
+        <label>For how long has the child had Fever?</label>
+        <item>
+          <label>Less than a week</label>
+          <value>c1</value>
+        </item>
+        <item>
+          <label>1 Week</label>
+          <value>c2</value>
+        </item>
+        <item>
+          <label>2 Weeks</label>
+          <value>c3</value>
+        </item>
+        <item>
+          <label>3 Weeks +</label>
+          <value>c4</value>
+        </item>
+      </select1>
+      <select1 ref="/treatments/group_fever/mrdt_results">
+        <label>Malaria rapid test results</label>
+        <item>
+          <label>Positive</label>
+          <value>positive</value>
+        </item>
+        <item>
+          <label>Negative</label>
+          <value>negative</value>
+        </item>
+        <item>
+          <label>mRDT not done</label>
+          <value>non</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/treatments/group_diarrhea">
+      <label>Diarrhea</label>
+      <select1 ref="/treatments/group_diarrhea/patient_diarrhea">
+        <label>Does the patient have diarrhea?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/treatments/group_diarrhea/diarrhea_duration">
+        <label>For how long has the child had Diarrhea?</label>
+        <item>
+          <label>Less than a week</label>
+          <value>c1</value>
+        </item>
+        <item>
+          <label>1 Week</label>
+          <value>c2</value>
+        </item>
+        <item>
+          <label>2 Weeks</label>
+          <value>c3</value>
+        </item>
+        <item>
+          <label>3 Weeks +</label>
+          <value>c4</value>
+        </item>
+      </select1>
+      <select1 ref="/treatments/group_diarrhea/diarrhea_blood">
+        <label>Diarrhea with blood?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <select ref="/treatments/danger_signs">
+      <label>Does the child have any danger signs?</label>
+      <item>
+        <label>Convulsions</label>
+        <value>d1</value>
+      </item>
+      <item>
+        <label>Unable to feed</label>
+        <value>d2</value>
+      </item>
+      <item>
+        <label>Vomits everything</label>
+        <value>d3</value>
+      </item>
+      <item>
+        <label>Very sleepy</label>
+        <value>d4</value>
+      </item>
+    </select>
+  </h:body>
+</h:html>
