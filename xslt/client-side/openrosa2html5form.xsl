@@ -193,7 +193,7 @@ XSLT Stylesheet that transforms OpenRosa style (X)Forms into valid HTMl5 forms
                         </fieldset>
                     </xsl:if>
                     <xsl:if test="/h:html/h:body//xf:output">
-                        <xsl:comment>WARNING: Output element(s) added but note that only /absolute/path/to/node is properly supported as "value" attribute of outputs. Please test to make sure they do what you want.</xsl:comment>
+                        <xsl:apply-templates select="/h:html/h:body//xf:output" />
                     </xsl:if>
                     <xsl:if test="/h:html/h:body//xf:itemset">
                         <xsl:comment>WARNING: Itemset support is experimental. Make sure to test whether they do what you want.</xsl:comment>
