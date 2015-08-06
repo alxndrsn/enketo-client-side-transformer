@@ -36,7 +36,7 @@ XSLT Stylesheet that transforms OpenRosa style (X)Forms into valid HTMl5 forms
     xmlns:str="http://exslt.org/strings"
     xmlns:dyn="http://exslt.org/dynamic"
     extension-element-prefixes="exsl str dyn"
-    version="1.0"
+    version="2.0"
     >
 
     <xsl:output method="xml" omit-xml-declaration="yes" encoding="UTF-8" indent="yes"/><!-- for xml: version="1.0" -->
