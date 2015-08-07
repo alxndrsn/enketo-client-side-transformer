@@ -1,4 +1,4 @@
-<form autocomplete="off" novalidate="novalidate" class="or clearfix" id="V">
+<form autocomplete="off" novalidate="novalidate" class="or clearfix" dir="ltr" id="V">
 <!--This form was created by transforming a OpenRosa-flavored (X)Form using an XSLT sheet created by Enketo LLC.--><section class="form-logo"> </section><h3 id="form-title">ANC Visit Report</h3>
   
   
