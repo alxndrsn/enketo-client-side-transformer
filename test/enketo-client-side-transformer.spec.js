@@ -21,6 +21,7 @@ describe('transformations', function() {
       'dosages',
       'hospital-survey',
       'households',
+      'pictorial-report',
       'pregnancy',
       'treatments',
       'visit-report',
