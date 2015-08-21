@@ -30,6 +30,7 @@
         <translation default="true()" lang="default">
           <text id="/images/picture">
             <value form="image">jr://picture.png</value>
+            <value form="big-image">jr://fish.png</value>
           </text>
         </translation>
       </itext>
