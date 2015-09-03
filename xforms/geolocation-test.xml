@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Report Location</h:title>
+    <model>
+      <instance>
+        <geolocation-test id="GEO" version="2015-08-24 00:00:00">
+          <Location>
+            <location_gps/>
+            <location_calc/>
+            <location_note_message/>
+            <location_hint_calc/>
+            <location_hint_note/>
+          </Location>
+          <meta>
+            <instanceID/>
+          </meta>
+        </geolocation-test>
+      </instance>
+      <bind nodeset="/geolocation-test/Location/location_gps" required="true()" type="geopoint"/>
+      <bind calculate="concat('Your location for this report is ', if(string-length( /geolocation-test/Location/location_gps ) &gt; 0, /geolocation-test/Location/location_gps , 'not yet set.'))" nodeset="/geolocation-test/Location/location_calc" type="string"/>
+      <bind nodeset="/geolocation-test/Location/location_note_message" readonly="true()" type="string"/>
+      <bind calculate="if(string-length( /geolocation-test/Location/location_gps ) &gt; 0,'If you wish to reset the location, click the trash icon above and click the &quot;crosshair&quot; button', 'Please make sure that your GPS is ON and that you click the &quot;crosshair&quot; button above before submitting your form')" nodeset="/geolocation-test/Location/location_hint_calc" type="string"/>
+      <bind nodeset="/geolocation-test/Location/location_hint_note" readonly="true()" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/geolocation-test/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group appearance="field-list" ref="/geolocation-test/Location">
+      <label>Location</label>
+      <input appearance="hide-input" ref="/geolocation-test/Location/location_gps">
+        <label>Click on button to set location</label>
+      </input>
+      <input ref="/geolocation-test/Location/location_note_message">
+        <label>**<output value=" /geolocation-test/Location/location_calc "/>**</label>
+      </input>
+      <input ref="/geolocation-test/Location/location_hint_note">
+        <label>_<output value=" /geolocation-test/Location/location_hint_calc "/>_</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>
