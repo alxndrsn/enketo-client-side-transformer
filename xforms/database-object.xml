@@ -10,7 +10,7 @@
 					</meta>
 				</person>
 			</instance>
-			<bind nodeset="/person/loc" type="string"/>
+			<bind nodeset="/person/loc" type="db:person"/>
 		</model>
 	</h:head>
 	<h:body>
