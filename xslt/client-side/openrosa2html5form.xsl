@@ -1019,7 +1019,7 @@ XSLT Stylesheet that transforms OpenRosa style (X)Forms into valid HTMl5 forms
             </xsl:variable>
             <!-- text labels get priority -->   
             <xsl:for-each select="./xf:value" >
-                <xsl:if test="not(@form = 'image' or @form = 'video' or @form = 'audio')">
+                <xsl:if test="not(@form = 'image' or @form = 'video' or @form = 'audio' or @form='big-image')">
                     <span>
                         <xsl:attribute name="lang">
                             <xsl:value-of select="$lang"/>
@@ -1043,29 +1043,31 @@ XSLT Stylesheet that transforms OpenRosa style (X)Forms into valid HTMl5 forms
                 </xsl:if>
             </xsl:for-each>
             <!-- media labels in document order -->
-            <xsl:for-each select="./xf:value[@form = 'image' or @form = 'big-image' or @form = 'video' or @form = 'audio' and not($class = 'or-hint')]" >
+            <xsl:for-each select="./xf:value[@form = 'image' or @form = 'video' or @form = 'audio' and not($class = 'or-hint')]" >
                 <xsl:choose>
                     <xsl:when test="@form = 'image'" >
                         <!-- test if there is a sibling big-image -->
-                        <xsl:if test="../xf:value[@form = 'big-image']" >
-                            <a>
-                                <xsl:attribute name="href">
-                                    <xsl:value-of select="../xf:value[@form = 'big-image']"/>
-                                </xsl:attribute>
+                        <xsl:choose>
+                            <xsl:when test="../xf:value[@form = 'big-image']" >
+                                <a>
+                                    <xsl:attribute name="href">
+                                        <xsl:value-of select="../xf:value[@form = 'big-image']"/>
+                                    </xsl:attribute>
+                                    <xsl:call-template name="image">
+                                        <xsl:with-param name="active" select="$active"/>
+                                        <xsl:with-param name="notext" select="$notext"/>
+                                        <xsl:with-param name="lang" select="$lang"/>
+                                    </xsl:call-template>
+                                </a>
+                            </xsl:when>
+                            <xsl:otherwise test="not(../xf:value[@form = 'big-image'])" >
                                 <xsl:call-template name="image">
                                     <xsl:with-param name="active" select="$active"/>
                                     <xsl:with-param name="notext" select="$notext"/>
                                     <xsl:with-param name="lang" select="$lang"/>
                                 </xsl:call-template>
-                            </a>
-                        </xsl:if>
-                        <xsl:if test="not(../xf:value[@form = 'big-image'])" > <!-- TODO when/otherwise never works for me :-( -->
-                            <xsl:call-template name="image">
-                                <xsl:with-param name="active" select="$active"/>
-                                <xsl:with-param name="notext" select="$notext"/>
-                                <xsl:with-param name="lang" select="$lang"/>
-                            </xsl:call-template>
-                        </xsl:if>
+                            </xsl:otherwise>
+                        </xsl:choose>
                     </xsl:when>
                     <xsl:when test="@form = 'audio'">
                         <audio controls="controls">
