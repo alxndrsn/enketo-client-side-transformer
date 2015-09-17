@@ -120,7 +120,7 @@ XSLT Stylesheet that transforms OpenRosa style (X)Forms into valid HTMl5 forms
                     <section class="form-logo">
                         <xsl:text> </xsl:text>
                     </section>
-                    <h3 id="form-title">
+                    <h3 dir="auto" id="form-title">
                         <xsl:choose>
                             <xsl:when test="/h:html/h:head/h:title">
                                 <xsl:value-of select="/h:html/h:head/h:title"/>
@@ -174,9 +174,14 @@ XSLT Stylesheet that transforms OpenRosa style (X)Forms into valid HTMl5 forms
                             <xsl:apply-templates select="/h:html/h:head/xf:model/xf:bind[@calculate]" />
                         </fieldset>
                     </xsl:if>
-                    <xsl:if test="/h:html/h:body//xf:itemset">
-                        <xsl:comment>WARNING: Itemset support is experimental. Make sure to test whether they do what you want.</xsl:comment>
-                    </xsl:if>
+
+
+
+
+
+
+
+
                     <xsl:if test="//xf:submission">
                         <xsl:comment>ERROR: Submissions element(s) not supported yet.</xsl:comment>
                     </xsl:if>
@@ -696,6 +701,12 @@ XSLT Stylesheet that transforms OpenRosa style (X)Forms into valid HTMl5 forms
             <xsl:attribute name="class">
                 <xsl:if test="not($binding/@readonly = 'true()')">
                     <xsl:value-of select="'question '"/>
+                </xsl:if>
+                <xsl:if test="not(contains(@appearance, 'compact') or contains(@appearance, 'list-nolabel') or contains(@appearance, 'label') or contains(@appearance, 'likert')) or contains(@appearance, 'horizontal-compact')" >
+                    <xsl:value-of select="'simple-select '"/>
+                </xsl:if>
+                <xsl:if test="local-name() = 'trigger'">
+                    <xsl:value-of select="'trigger '"/>
                 </xsl:if>
                 <xsl:if test="$binding/@readonly = 'true()' ">
                     <xsl:value-of select="'note '"/>
