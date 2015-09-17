@@ -1371,9 +1371,8 @@ XSLT Stylesheet that transforms OpenRosa style (X)Forms into valid HTMl5 forms
             <xsl:when
                 test="$xml_type = 'decimal' or $xml_type = 'float' or $xml_type = 'double' or $xml_type = 'int' or $xml_type = 'integer'"
                 >number</xsl:when>
-            <xsl:otherwise>
-                <xsl:value-of select="string('text')" />
-            </xsl:otherwise>
+            <xsl:otherwise
+                >text</xsl:otherwise>
         </xsl:choose>
     </xsl:template>
 </xsl:stylesheet>
