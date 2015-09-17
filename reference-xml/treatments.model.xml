@@ -1,5 +1,4 @@
-<model>
-    <instance>
+<model><instance>
         <treatments id="PNT" version="2015-07-22 00:00:00">
           <group_cough>
             <patient_coughs/>
@@ -25,5 +24,4 @@
             <instanceID/>
           </meta>
         </treatments>
-      </instance>
-  </model>
+      </instance></model>

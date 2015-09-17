@@ -1,0 +1,14 @@
+<model><instance>
+        <geolocation-test id="GEO" version="2015-08-24 00:00:00">
+          <Location>
+            <location_gps/>
+            <location_calc/>
+            <location_note_message/>
+            <location_hint_calc/>
+            <location_hint_note/>
+          </Location>
+          <meta>
+            <instanceID/>
+          </meta>
+        </geolocation-test>
+      </instance></model>

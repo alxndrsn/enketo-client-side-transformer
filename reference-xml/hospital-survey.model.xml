@@ -1,5 +1,4 @@
-<model>
-    <instance>
+<model><instance>
         <hospital id="EDCD_H01" version="2015-06-17">
           <report_date tag="date"/>
           <select_facility tag="hs"/>
@@ -57,5 +56,4 @@
             <instanceName tag="m_n"/>
           </meta>
         </hospital>
-      </instance>
-  </model>
+      </instance></model>

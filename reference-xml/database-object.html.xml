@@ -1,0 +1,6 @@
+<form autocomplete="off" novalidate="novalidate" class="or clearfix" dir="ltr" id="person"><!--This form was created by transforming a OpenRosa-flavored (X)Form using an XSLT sheet created by Enketo LLC.--><section class="form-logo"/><h3 id="form-title">{{'person.new' | translate}}</h3>
+	
+	
+		<label class="question non-select or-appearance-dbobject "><span lang="" class="question-label active">{{'person.loc' | translate}}</span><input type="error" name="/person/loc" data-type-xml="person"/><span class="or-constraint-msg active" lang="" data-i18n="constraint.invalid">Value not allowed</span></label>
+	
+</form>

@@ -1,5 +1,4 @@
-<model>
-    <instance>
+<model><instance>
         <data id="HH" version="2015-07-07">
           <household_head/>
           <gender/>
@@ -14,5 +13,4 @@
             <instanceID/>
           </meta>
         </data>
-      </instance>
-  </model>
+      </instance></model>

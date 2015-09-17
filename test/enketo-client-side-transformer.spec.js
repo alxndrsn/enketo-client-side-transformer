@@ -18,7 +18,9 @@ describe('transformations', function() {
   });
 
   [
+      'database-object',
       'dosages',
+      'geolocation-test',
       'hospital-survey',
       'households',
       'pictorial-report',

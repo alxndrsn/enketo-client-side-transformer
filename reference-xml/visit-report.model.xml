@@ -1,5 +1,4 @@
-<model>
-    <instance>
+<model><instance>
         <data id="V" version="2015-06-05">
           <pregnancy_id tag="id"/>
           <meta>
@@ -12,5 +11,4 @@
             <instanceName tag="m_n"/>
           </meta>
         </data>
-      </instance>
-  </model>
+      </instance></model>
