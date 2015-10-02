@@ -120,16 +120,12 @@ XSLT Stylesheet that transforms OpenRosa style (X)Forms into valid HTMl5 forms
                     <section class="form-logo">
                         <xsl:text> </xsl:text>
                     </section>
-                    <h3 dir="auto" id="form-title">
-                        <xsl:choose>
-                            <xsl:when test="/h:html/h:head/h:title">
-                                <xsl:value-of select="/h:html/h:head/h:title"/>
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <xsl:text>No Title</xsl:text>
-                            </xsl:otherwise>
-                        </xsl:choose>
-                    </h3>
+                    <!-- When we don't supply a title, we probably did that on purpose -->
+                    <xsl:if test="/h:html/h:head/h:title">
+                        <h3 dir="auto" id="form-title">
+                            <xsl:value-of select="/h:html/h:head/h:title"/>
+                        </h3>
+                    </xsl:if>
                 <!--
                     <div id="stats" style="display: none;">
                         <span id="jrSelect"><xsl:value-of select="count(/h:html/h:body//xf:select)"/></span>
