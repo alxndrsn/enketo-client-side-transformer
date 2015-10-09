@@ -313,6 +313,26 @@ XSLT Stylesheet that transforms OpenRosa style (X)Forms into valid HTMl5 forms
         </section><xsl:comment>end of repeat fieldset with name <xsl:value-of select="@nodeset" /> </xsl:comment>
     </xsl:template>
 
+    <xsl:template name="str-replace">
+        <xsl:param name="string"/>
+        <xsl:param name="target"/>
+        <xsl:param name="with"/>
+        <xsl:choose>
+            <xsl:when test="contains($string, $target)">
+                <xsl:value-of select="substring-before($string, $target)"/>
+                <xsl:value-of select="$with"/>
+                <xsl:call-template name="str-replace">
+                    <xsl:with-param name="string" select="substring-after($string, $target)"/>
+                    <xsl:with-param name="target" select="$target"/>
+                    <xsl:with-param name="with" select="$with"/>
+                </xsl:call-template>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$string"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+
     <xsl:template name="appearance">
         <xsl:if test="@appearance">
             <xsl:choose>
@@ -324,9 +344,16 @@ XSLT Stylesheet that transforms OpenRosa style (X)Forms into valid HTMl5 forms
                   </xsl:for-each>
               </xsl:when>
               <xsl:otherwise>
-                  <!-- so far in examples, @appearance has never had more than a single value, so it's safe just to use its value
-                       directly.  We appened a `space` character to maintain consistency with the output of `str:tokenize`. -->
-                  <xsl:value-of select="concat(concat('or-appearance-', @appearance), ' ')"/>
+                  <xsl:if test="@appearance">
+                      <xsl:value-of select="'or-appearance-'"/>
+                      <xsl:call-template name="str-replace">
+                          <xsl:with-param name="string" select="@appearance"/>
+                          <xsl:with-param name="target" select="' '"/>
+                          <xsl:with-param name="with" select="' or-appearance-'"/>
+                      </xsl:call-template>
+                      <!-- append space to maintain consistency with output of str:tokenize above -->
+                      <xsl:value-of select="' '"/>
+                  </xsl:if>
               </xsl:otherwise>
             </xsl:choose>
         </xsl:if>
