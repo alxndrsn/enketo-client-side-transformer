@@ -1,21 +1,26 @@
 <h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<h:head>
-		<h:title>{{'person.new' | translate}}</h:title>
+		<h:title>{{'clinic.new' | translate}}</h:title>
 		<model>
 			<instance>
-				<person id="person" version="1">
+				<clinic id="clinic" version="1">
 					<loc/>
+					<contact/>
 					<meta>
 						<instanceID/>
 					</meta>
-				</person>
+				</clinic>
 			</instance>
-			<bind nodeset="/person/loc" type="db:person"/>
+			<bind nodeset="/clinic/loc" type="db:place"/>
+			<bind nodeset="/clinic/contact" type="db:person"/>
 		</model>
 	</h:head>
 	<h:body>
-		<input ref="/person/loc" appearance="dbObject" data-db-type="location">
-			<label>{{'person.loc' | translate}}</label>
+		<input ref="/clinic/loc" appearance="dbObject" data-db-type="location">
+			<label>{{'clinic.loc' | translate}}</label>
+		</input>
+		<input ref="/clinic/contact" appearance="dbObject allow-new" data-db-type="location">
+			<label>{{'clinic.contact' | translate}}</label>
 		</input>
 	</h:body>
 </h:html>
