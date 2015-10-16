@@ -51,7 +51,7 @@
       <bind calculate="if(string-length( /data/clinic/location_gps ) &gt; 0,'If you wish to reset the location, press the trash icon above and press the &quot;crosshair&quot; button', 'Please make sure that your GPS is ON and that you press the &quot;crosshair&quot; button above before submitting your form')" nodeset="/data/clinic/location_hint_calc" type="string"/>
       <bind nodeset="/data/clinic/location_hint_note" readonly="true()" type="string"/>
       <bind calculate="concat('uuid:', uuid())" nodeset="/data/meta/instanceID" readonly="true()" type="string"/>
-      <bind nodeset="/data/has_children" type="select"/>
+      <bind nodeset="/data/has_children" type="select1" required="true()"/>
       <bind nodeset="/data/repeat" relevant="selected(/data/has_children, 'yes')"/>
       <bind nodeset="/data/repeat/child/first_name" type="string" required="true()"/>
       <bind nodeset="/data/repeat/child/last_name" type="string" calculate="/data/contact/last_name"/>
@@ -72,6 +72,10 @@
         <item>
           <label>Yes</label>
           <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
         </item>
       </select>
       <group ref="/data/repeat">
