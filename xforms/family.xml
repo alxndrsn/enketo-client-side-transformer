@@ -23,9 +23,12 @@
             <notes/>
             <parent>PARENT</parent>
           </contact>
-          <has_children/>
+          <repeat-relevant>
+            <child/>
+          </repeat-relevant>
           <repeat>
-            <child>
+            <child jr:template="">
+              <type>person</type>
               <first_name/>
               <last_name/>
               <parent>PARENT</parent>
@@ -51,8 +54,8 @@
       <bind calculate="if(string-length( /data/clinic/location_gps ) &gt; 0,'If you wish to reset the location, press the trash icon above and press the &quot;crosshair&quot; button', 'Please make sure that your GPS is ON and that you press the &quot;crosshair&quot; button above before submitting your form')" nodeset="/data/clinic/location_hint_calc" type="string"/>
       <bind nodeset="/data/clinic/location_hint_note" readonly="true()" type="string"/>
       <bind calculate="concat('uuid:', uuid())" nodeset="/data/meta/instanceID" readonly="true()" type="string"/>
-      <bind nodeset="/data/has_children" type="select1" required="true()"/>
-      <bind nodeset="/data/repeat" relevant="selected(/data/has_children, 'yes')"/>
+      <bind nodeset="/data/repeat-relevant/child" type="select1" required="true()"/>
+      <bind nodeset="/data/repeat" relevant="selected(/data/repeat-relevant/child, 'true')"/>
       <bind nodeset="/data/repeat/child/first_name" type="string" required="true()"/>
       <bind nodeset="/data/repeat/child/last_name" type="string" calculate="/data/contact/last_name"/>
       <bind nodeset="/data/repeat/child/last_name" type="db:clinic"/>
@@ -67,15 +70,15 @@
       <input ref="/data/contact/last_name">
         <label>Surname</label>
       </input>
-      <select appearance="horizontal" ref="/data/has_children">
+      <select appearance="horizontal" ref="/data/repeat-relevant/child">
         <label>Any children?</label>
         <item>
           <label>Yes</label>
-          <value>yes</value>
+          <value>true</value>
         </item>
         <item>
           <label>No</label>
-          <value>no</value>
+          <value>false</value>
         </item>
       </select>
       <group ref="/data/repeat">
