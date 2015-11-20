@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Markdown demo</h:title>
+    <model>
+      <instance>
+        <markdown id="MARKDOWN" version="2015-07-13 00:00:00">
+          <display_edd/>
+        </markdown>
+      </instance>
+      <bind nodeset="/pregnancy/display_edd" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/pregnancy/display_edd">
+      <label>**The estimated delivery date is**
+
+  &lt;table&gt; &lt;thead&gt; &lt;tr&gt; &lt;td&gt;col1&lt;/td&gt; &lt;td&gt;col2&lt;/td&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tdata&gt; &lt;tr&gt; &lt;td&gt;val1.1&lt;/td&gt; &lt;td&gt;val1.2&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;val2.1&lt;/td&gt; &lt;td&gt;val2.2&lt;/td&gt; &lt;/tr&gt; &lt;/tdata&gt; &lt;/table&gt;
+**Remind woman to**
+1. Take Iron Folate daily
+2. Attend regular ANC visits
+...
+
+**b**
+__b__
+**Bold stars**
+__Bold underscores__
+**a bold sentence with an * in it**
+__a bold sentence with an _ in it__
+*i*
+_i_
+*Italic stars*
+_Italic underscores_
+_a bold sentence with an _ in it_
+*a bold sentence with an * in it*
+
+</label>
+    </input>
+  </h:body>
+</h:html>

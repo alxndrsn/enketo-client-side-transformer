@@ -1,0 +1,2811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Widgets Dev form</h:title>
+    <model>
+      <itext>
+        <translation default="true()" lang="default">
+          <text id="/widgets-dev/repeat/select_widgets/grid_2_columns:hint">
+            <value>Grid with a maximum of 2 columns. (type=select_one a_b, appearance=compact-2)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table/generated_table_list_label_53:label">
+            <value>Table with image labels (made using an easier method)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select1/7:label">
+            <value>option 7</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_1/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/selectadvance/c:label">
+            <value>option c</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/table_list_3:hint">
+            <value>No need to do anything special here</value>
+          </text>
+          <text id="/widgets-dev/repeat/number_widgets/my_distress:hint">
+            <value>A highly specific widget to measure distress</value>
+          </text>
+          <text id="/widgets-dev/repeat/date_time_widgets/my_date_month_year:label">
+            <value>Month-year widget</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal_compact:label">
+            <value>Select multiple widget displaying horizontally (in Enketo)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_1:hint">
+            <value>Show only the inputs of these options and not the labels (type=select_one yes_no, appearance=list-nolabel)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select/c:label">
+            <value>option c</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_second_method/happy:label">
+            <value form="image">jr://images/happy.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test:label">
+            <value>List group</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/spinner_all:label">
+            <value>Spinner widget: select multiple</value>
+          </text>
+          <text id="/widgets-dev/repeat/media_widgets/my_video:hint">
+            <value>This will launch the video recorder. Not supported in enketo at the moment (type=video)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/grid_2_columns/c:label">
+            <value form="image">jr://images/c.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_likert/5:label">
+            <value>strongly agree</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/selectadvance/d:label">
+            <value>option d</value>
+          </text>
+          <text id="static_instance-happy_sad-0">
+            <value form="image">jr://images/happy.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/text_widgets/my_string:label">
+            <value>Text widget</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table/happy_sad_michael/happy:label">
+            <value form="image">jr://images/happy.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/table_list_3/dk:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/widgets-dev/repeat/display_widgets/my_trigger:hint">
+            <value>Prompts for confirmation. Useful to combine with required or relevant. (type=trigger)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select1/4:label">
+            <value>option 4</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/spinner/c:label">
+            <value>option c</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal_compact/dk:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/reserved_name_for_field_list_labels_45/dk:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal/5:label">
+            <value>option 5</value>
+          </text>
+          <text id="static_instance-agree5-3">
+            <value>agree</value>
+          </text>
+          <text id="static_instance-agree5-2">
+            <value>neither agree nor disagree</value>
+          </text>
+          <text id="static_instance-agree5-1">
+            <value>disagree</value>
+          </text>
+          <text id="static_instance-agree5-0">
+            <value>strongly disagree</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal:label">
+            <value>Select one displaying horizontally but in columns (in Enketo)</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group1/country:label">
+            <value>Country</value>
+          </text>
+          <text id="static_instance-a_b_c_d-1">
+            <value form="image">jr://images/b.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_test_label/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/grid_2_columns/b:label">
+            <value form="image">jr://images/b.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_1:label">
+            <value>Q1</value>
+          </text>
+          <text id="static_instance-a_b_c_d-2">
+            <value form="image">jr://images/c.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select:hint">
+            <value>Using a list specified in the choices worksheet (type=select_multiple list)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal/6:label">
+            <value>option 6</value>
+          </text>
+          <text id="/widgets-dev/repeat/number_widgets:label">
+            <value>Number widgets</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group1/city:label">
+            <value>City</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_second_method:label">
+            <value>Select mood</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/selectadvance:label">
+            <value>Select widget - auto advance</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_test_label/dk:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="static_instance-yes_no-3">
+            <value>Not Applicable</value>
+          </text>
+          <text id="static_instance-yes_no-2">
+            <value>Don't Know</value>
+          </text>
+          <text id="static_instance-yes_no-1">
+            <value>No</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal_compact/a:label">
+            <value>option a</value>
+          </text>
+          <text id="/widgets-dev/repeat/number_widgets/my_int:label">
+            <value>Integer widget (try entering a number &gt; 10)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_1/dk:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/selectadvance:hint">
+            <value>Advance to the next question immediate after selection in ODK Collect. (type=select_one list, appearance=quick)</value>
+          </text>
+          <text id="/widgets-dev/repeat/geopoint_widgets:label">
+            <value>GPS widgets</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal/1:label">
+            <value>option 1</value>
+          </text>
+          <text id="/widgets-dev/repeat/media_widgets/my_image:hint">
+            <value>This will launch the camera. Not supported in enketo at the moment (type=image)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal/3:label">
+            <value>option 3</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_1/na:label">
+            <value>Not Applicable</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_brian2:label">
+            <value>Brian</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select1/2:label">
+            <value>option 2</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_test_label/na:label">
+            <value>Not Applicable</value>
+          </text>
+          <text id="/widgets-dev/repeat/date_time_widgets/my_date_year:label">
+            <value>Year widget (year only)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/reserved_name_for_field_list_labels_45/no:label">
+            <value>No</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_likert:label">
+            <value>Likert widget</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group2/neighborhood2:hint">
+            <value>Using a choice filter to update options based on previous answers (choice_filter: country = <output value=" /widgets-dev/repeat/cascading_widgets/group2/country2 "/> and city = <output value=" /widgets-dev/repeat/cascading_widgets/group2/city2 "/>, appearance = minimal)</value>
+          </text>
+          <text id="static_instance-happy_sad-1">
+            <value form="image">jr://images/sad.jpg</value>
+          </text>
+          <text id="static_instance-list-0">
+            <value>option a</value>
+          </text>
+          <text id="static_instance-list-1">
+            <value>option b</value>
+          </text>
+          <text id="static_instance-list-2">
+            <value>option c</value>
+          </text>
+          <text id="static_instance-list-3">
+            <value>option d</value>
+          </text>
+          <text id="/widgets-dev/repeat/number_widgets/my_int:hint">
+            <value>This field has a constraint (type=integer, constraint=.&lt;10)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select/d:label">
+            <value>option d</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_michael2:hint">
+            <value>Show only the inputs of these options and not the labels (type=select_one yes_no, appearance=list-nolabel)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_test_label:hint">
+            <value>Show only the labels of these options and not the inputs (type=select_one yes_no, appearance=label)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal_compact:label">
+            <value>Select one displaying compactly and horizontally (in Enketo)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_likert:hint">
+            <value>(type=select_one, appearance=likert)</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group1/country/nl:label">
+            <value>The Netherlands</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_likert/3:label">
+            <value>neither agree nor disagree</value>
+          </text>
+          <text id="/widgets-dev/repeat/date_time_widgets/dateTime:hint">
+            <value>For exact times, will be converted to UTC/GMT (type=dateTime)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/table_list_4/na:label">
+            <value>Not Applicable</value>
+          </text>
+          <text id="/widgets-dev/repeat/date_time_widgets/my_date_month_year:hint">
+            <value>Simply specify an appearance style (type=date, appearance=month-year)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal_compact:hint">
+            <value>(type=select_one, appearance=horizontal-compact)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets:label">
+            <value>Basic Select widgets</value>
+          </text>
+          <text id="/widgets-dev/repeat/media_widgets/my_image:label">
+            <value>Image widget</value>
+          </text>
+          <text id="/widgets-dev/repeat/display_widgets/select_media:label">
+            <value>You can also add media to choices. Choose your favorite bird.</value>
+          </text>
+          <text id="/widgets-dev/repeat/geopoint_widgets/my_geopoint:hint">
+            <value>This will record the gps location. In enketo it also shows a map. (type=geopoint)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table_2:hint">
+            <value>Shows all questions on one page in ODK Collect (appearance=field-list)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal/7:label">
+            <value>option 7</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_brian2/happy:label">
+            <value form="image">jr://images/happy.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/spinner/d:label">
+            <value>option d</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group1/neighborhood:label">
+            <value>Neighborhood</value>
+          </text>
+          <text id="/widgets-dev/repeat/text_widgets/my_string:hint">
+            <value>Can be short or long but always one line (type = text)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_michael2/happy:label">
+            <value form="image">jr://images/happy.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/grid_2_columns:label">
+            <value>Grid select one widget</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_2/na:label">
+            <value>Not Applicable</value>
+          </text>
+          <text id="/widgets-dev/repeat/display_widgets/my_trigger:label">
+            <value>Acknowledge widget</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_second_method/sad:label">
+            <value form="image">jr://images/sad.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal_compact/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group2/country2/nl:label">
+            <value>The Netherlands</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/grid_test_audio/b:label">
+            <value form="image">jr://images/b.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/grid_2_columns/d:label">
+            <value form="image">jr://images/d.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/text_widgets/my_long_text:hint">
+            <value>Can be multiple lines (type=text, appearance = multiline)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_2:label">
+            <value>Question 2</value>
+          </text>
+          <text id="static_instance-countries-0">
+            <value>The Netherlands</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal/2:label">
+            <value>option 2</value>
+          </text>
+          <text id="/widgets-dev/repeat/geopoint_widgets/my_geopoint_m:hint">
+            <value>This will record the gps location. In enketo is is the same as the previous. (type=geopoint, appearance=maps)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/table_list_4/dk:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select/b:label">
+            <value>option b</value>
+          </text>
+          <text id="static_instance-a_b-0">
+            <value form="image">jr://images/a.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/table_list_4/no:label">
+            <value>No</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_test_label:label">
+            <value>Table</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/spinner/a:label">
+            <value>option a</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/spinner:hint">
+            <value>Showing a pull-down list of options (type=select_one list, appearance=minimal)</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group1/country/usa:label">
+            <value>United States</value>
+          </text>
+          <text id="/widgets-dev/repeat/date_time_widgets/dateTime:label">
+            <value>Date and time widget</value>
+          </text>
+          <text id="/widgets-dev/repeat/date_time_widgets:label">
+            <value>Date and time widgets</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select1:label">
+            <value>Select one widget</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select1/5:label">
+            <value>option 5</value>
+          </text>
+          <text id="static_instance-neighborhoods-5">
+            <value>Harbor</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group2:label">
+            <value>Cascading Selects with Pulldowns</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group2/country2:hint">
+            <value>(appearance: minimal)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal/5:label">
+            <value>option 5</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal/6:label">
+            <value>option 6</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_likert/4:label">
+            <value>agree</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/grid_test:label">
+            <value>Grid select one widget</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/spinner_all/a:label">
+            <value>option a</value>
+          </text>
+          <text id="/widgets-dev/repeat/number_widgets/my_distress:label">
+            <value>Distress widget</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table/generated_table_list_label_53:hint">
+            <value>A much easier way to do the same (appearance=table-list)</value>
+          </text>
+          <text id="/widgets-dev/repeat/media_widgets/my_barcode:hint">
+            <value>Scans multi-format 1d/2d barcodes. In enketo it allows manual entry (type=barcode)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/spinner:label">
+            <value>Spinner widget: select one</value>
+          </text>
+          <text id="static_instance-a_b_c_d-0">
+            <value form="image">jr://images/a.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group1/neighborhood:hint">
+            <value>Using a choice filter to update options based on previous answers (choice_filter: country = <output value=" /widgets-dev/repeat/cascading_widgets/group1/country "/> and city = <output value=" /widgets-dev/repeat/cascading_widgets/group1/city "/>)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test:hint">
+            <value>Shows all questions on one page in ODK Collect (appearance=field-list)</value>
+          </text>
+          <text id="static_instance-a_b_c_d-3">
+            <value form="image">jr://images/d.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/display_widgets/select_media/nut:label">
+            <value form="image">jr://images/nuthatch.png</value>
+            <value>nuthatch</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group1:label">
+            <value>Cascading Selects with Radio Buttons</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/grid_test_audio:hint">
+            <value>Same as previous but this one advances to the next question automatically in ODK Collect. (type=select_one a_b, appearance=quickcompact)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/grid_2_columns/a:label">
+            <value form="image">jr://images/a.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table/reserved_name_for_field_list_labels_54/sad:label">
+            <value form="image">jr://images/sad.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_1/no:label">
+            <value>No</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_2/no:label">
+            <value>No</value>
+          </text>
+          <text id="/widgets-dev/repeat/geopoint_widgets/my_geopoint_hide:hint">
+            <value>To show a larger map (on desktop screens), you can hide the input fields. (appearance = hide-input)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal_compact:hint">
+            <value>(type = select_multiple, appearance=horizontal-compact)</value>
+          </text>
+          <text id="/widgets-dev/repeat/display_widgets/text_media:hint">
+            <value>Add the file name in the audio column on your survey sheet. Make sure you upload this file when you publish your form.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table/happy_sad_michael/sad:label">
+            <value form="image">jr://images/sad.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group1/city:hint">
+            <value>Using a choice filter to update options based on a previous answer (choice_filter: country = <output value=" /widgets-dev/repeat/cascading_widgets/group1/country "/>)</value>
+          </text>
+          <text id="/widgets-dev/repeat/number_widgets/my_decimal:label">
+            <value>Decimal widget (allows only number &gt; 10.51 and &lt; 18.39)</value>
+          </text>
+          <text id="/widgets-dev/repeat/geopoint_widgets/my_geopoint_m:label">
+            <value>Geopoint with map Widget</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_2:hint">
+            <value>Show only the inputs of these options and not the labels (type=select_one yes_no, appearance=list-nolabel)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select1/3:label">
+            <value>option 3</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_likert/1:label">
+            <value>strongly disagree</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal/4:label">
+            <value>option 4</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal_compact/na:label">
+            <value>Not Applicable</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table/reserved_name_for_field_list_labels_54/happy:label">
+            <value form="image">jr://images/happy.jpg</value>
+          </text>
+          <text id="static_instance-cities-3">
+            <value>Los Angeles</value>
+          </text>
+          <text id="static_instance-cities-2">
+            <value>New York City</value>
+          </text>
+          <text id="static_instance-cities-1">
+            <value>Denver</value>
+          </text>
+          <text id="static_instance-cities-0">
+            <value>Amsterdam</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/grid_test_audio/a:label">
+            <value form="image">jr://images/a.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/media_widgets/my_audio:hint">
+            <value>This will launch the audio recorder. Not supported in enketo at the moment (type=audio)</value>
+          </text>
+          <text id="static_instance-cities-5">
+            <value>Dronten</value>
+          </text>
+          <text id="static_instance-cities-4">
+            <value>Rotterdam</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/table_list_3/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group2/neighborhood2:label">
+            <value>Neighborhood</value>
+          </text>
+          <text id="/widgets-dev/repeat/display_widgets/select_media/king:label">
+            <value form="image">jr://images/kingfisher.png</value>
+            <value>kingfisher</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal/7:label">
+            <value>option 7</value>
+          </text>
+          <text id="/widgets-dev/intro:label">
+            <value>Widgets Developer form.
+
+Show hidden branches to see if widgets are properly disabled by entering $('.or-branch').show() in console.
+
+See how widgets behave when they are cloned (when a repeat is created).
+
+The XLS Form source is [here](https://docs.google.com/spreadsheet/ccc?key=0Al3Mw5sknZoPdGxzeHg0QlZHYlhFWElRaHBlVXNUV3c&amp;usp=sharing).</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/grid_test/a:label">
+            <value form="image">jr://images/a.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/display_widgets/select_media:hint">
+            <value>Add the file name in the image column on your choices sheet. Make sure you upload this file when you publish your form.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/spinner_all/c:label">
+            <value>option c</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal/8:label">
+            <value>option 8</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/selectadvance/a:label">
+            <value>option a</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets:label">
+            <value>Cascading Select widgets</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/grid_test/b:label">
+            <value form="image">jr://images/b.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/geopoint_widgets/my_geotrace:label">
+            <value>Geotrace widget</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/table_list_3/na:label">
+            <value>Not Applicable</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal/8:label">
+            <value>option 8</value>
+          </text>
+          <text id="/widgets-dev/repeat/date_time_widgets/my_date_year:hint">
+            <value>Simply specify and appearance style (type=date, appearance=year)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/spinner_all/b:label">
+            <value>option b</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/table_list_3/no:label">
+            <value>No</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select1/8:label">
+            <value>option 8</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/grid_test:hint">
+            <value>Make sure to put a.jpg and b.jpg in the form-media folder to see images here. (type=select_one a_b, appearance=compact)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal:hint">
+            <value>(type=select_one, appearance=horizontal)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select/a:label">
+            <value>option a</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_brian2/sad:label">
+            <value form="image">jr://images/sad.jpg</value>
+          </text>
+          <text id="static_instance-a_b-1">
+            <value form="image">jr://images/b.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/display_widgets/my_output:hint">
+            <value>This is a note and it uses a value of another field in its label (type=note)</value>
+          </text>
+          <text id="/widgets-dev/repeat/date_time_widgets/my_date:hint">
+            <value>This field has a constraint (type=date, constraint=.&gt;= today())</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/reserved_name_for_field_list_labels_45/na:label">
+            <value>Not Applicable</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_brian2:hint">
+            <value>Show only the inputs of these options and not the labels (type=select_one yes_no, appearance=list-nolabel)</value>
+          </text>
+          <text id="/widgets-dev/repeat/display_widgets:label">
+            <value>Display widgets</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal:hint">
+            <value>(type=select_multiple, appearance=horizontal)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal/2:label">
+            <value>option 2</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/table_list_4/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/spinner_all:hint">
+            <value>Showing a pull-down list of options (type=select_multiple list, appearance=minimal)</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group2/city2:label">
+            <value>City</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_2/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/reserved_name_for_field_list_labels_45/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/widgets-dev/repeat/media_widgets/my_audio:label">
+            <value>Audio widget</value>
+          </text>
+          <text id="/widgets-dev/repeat/text_widgets:label">
+            <value>Text widgets</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group2/country2:label">
+            <value>Country</value>
+          </text>
+          <text id="/widgets-dev/repeat/geopoint_widgets/my_geoshape:hint">
+            <value>This will record a closed sequence/polygon of geopoints (type=geoshape, appearance=maps hide-input)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/table_list_3:label">
+            <value>Q1</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select1/6:label">
+            <value>option 6</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/table_list_4:hint">
+            <value>No need to do anything special here</value>
+          </text>
+          <text id="/widgets-dev/repeat/geopoint_widgets/my_geotrace:hint">
+            <value>This will record a sequence/line of geopoints (type=geotrace, appearance=maps hide-input)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_michael2/sad:label">
+            <value form="image">jr://images/sad.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/media_widgets/my_video:label">
+            <value>Video widget</value>
+          </text>
+          <text id="static_instance-list2-1">
+            <value>option 2</value>
+          </text>
+          <text id="static_instance-neighborhoods-4">
+            <value>Park Hill</value>
+          </text>
+          <text id="static_instance-list2-3">
+            <value>option 4</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table/happy_sad_brian:label">
+            <value>Brian</value>
+          </text>
+          <text id="static_instance-list2-5">
+            <value>option 6</value>
+          </text>
+          <text id="static_instance-list2-4">
+            <value>option 5</value>
+          </text>
+          <text id="/widgets-dev/repeat/display_widgets/text_media:label">
+            <value form="audio">jr://audio/goldeneagle.mp3</value>
+            <value>You can add a sound recording, an image and a video to any input label or to a note.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_likert/2:label">
+            <value>disagree</value>
+          </text>
+          <text id="/widgets-dev/repeat/media_widgets/my_barcode:label">
+            <value>Barcode widget</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/generated_table_list_label_44:label">
+            <value>Table (made with an easier method)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/table_list_4:label">
+            <value>Question 2</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table/happy_sad_brian/happy:label">
+            <value form="image">jr://images/happy.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/number_widgets/my_decimal:hint">
+            <value>This field has a constraint (type=decimal, constraint=. &gt; 10.51 and . &lt; 18.39)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal_compact/c:label">
+            <value>option c</value>
+          </text>
+          <text id="static_instance-yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/spinner_all/d:label">
+            <value>option d</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/generated_table_list_label_44:hint">
+            <value>A much easier way to do the same (appearance=table-list) but it may slow down your form a bit.</value>
+          </text>
+          <text id="static_instance-countries-1">
+            <value>United States</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal_compact/d:label">
+            <value>option d</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table_2:label">
+            <value>Table with image labels</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_michael2:label">
+            <value>Michael</value>
+          </text>
+          <text id="static_instance-neighborhoods-1">
+            <value>Harlem</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal/4:label">
+            <value>option 4</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/selectadvance/b:label">
+            <value>option b</value>
+          </text>
+          <text id="/widgets-dev/hidebranch:label">
+            <value>enter something to hide everything (disable branch)</value>
+          </text>
+          <text id="static_instance-list2-0">
+            <value>option 1</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal/3:label">
+            <value>option 3</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select1:hint">
+            <value>Scroll down to see default selection (type=select_one list2, default=8)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_2/dk:label">
+            <value>Don't Know</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table/happy_sad_michael:label">
+            <value>Michael</value>
+          </text>
+          <text id="/widgets-dev/repeat/date_time_widgets/my_time:hint">
+            <value>Times are easy! (type=time)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal_compact/no:label">
+            <value>No</value>
+          </text>
+          <text id="/widgets-dev/repeat/geopoint_widgets/my_geoshape:label">
+            <value>Geoshape widget</value>
+          </text>
+          <text id="/widgets-dev/repeat/date_time_widgets/my_date:label">
+            <value>Date widget (this one allows only future dates and has a default value)</value>
+          </text>
+          <text id="static_instance-list2-2">
+            <value>option 3</value>
+          </text>
+          <text id="/widgets-dev/repeat/date_time_widgets/my_time:label">
+            <value>Time widget</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal:label">
+            <value>Select one displaying horizontally but in columns (in Enketo)</value>
+          </text>
+          <text id="static_instance-neighborhoods-3">
+            <value>Westerpark</value>
+          </text>
+          <text id="static_instance-agree5-4">
+            <value>strongly agree</value>
+          </text>
+          <text id="/widgets-dev/repeat/display_widgets/select_media/pig:label">
+            <value form="image">jr://images/pigeon.png</value>
+            <value>pigeon</value>
+          </text>
+          <text id="/widgets-dev/repeat/media_widgets:label">
+            <value>Media input widgets</value>
+          </text>
+          <text id="/widgets-dev/repeat/display_widgets/my_output:label">
+            <value>Note widget. In notes you can emphasize _words_ or _multiple words_ or __strongly emphasize something__.
+You can also use a line break to start a new sentence.
+
+The decimal number you entered was <output value=" /widgets-dev/repeat/number_widgets/my_decimal "/>.</value>
+          </text>
+          <text id="/widgets-dev/repeat/text_widgets/my_long_text:label">
+            <value>Multiline Text widget in enketo (in ODK collect this a normal text field)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal_compact/b:label">
+            <value>option b</value>
+          </text>
+          <text id="static_instance-list2-7">
+            <value>option 8</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group2/city2:hint">
+            <value>Using a choice filter to update options based on a previous answer (choice_filter: country = <output value=" /widgets-dev/repeat/cascading_widgets/group2/country2 "/>, appearance: minimal)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/spinner/b:label">
+            <value>option b</value>
+          </text>
+          <text id="static_instance-neighborhoods-8">
+            <value>Harbor</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table/happy_sad_brian/sad:label">
+            <value form="image">jr://images/sad.jpg</value>
+          </text>
+          <text id="static_instance-list2-6">
+            <value>option 7</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_second_method:hint">
+            <value>Show only the labels of these options and not the inputs (type=select_one yes_no, appearance=label)</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal/1:label">
+            <value>option 1</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/grid_test_audio:label">
+            <value>Grid auto-advance widget</value>
+          </text>
+          <text id="/widgets-dev/repeat/geopoint_widgets/my_geopoint:label">
+            <value>Geopoint widget</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select:label">
+            <value>Select multiple widget (don't pick c and d together)</value>
+          </text>
+          <text id="static_instance-neighborhoods-6">
+            <value>Dam</value>
+          </text>
+          <text id="static_instance-neighborhoods-7">
+            <value>Downtown</value>
+          </text>
+          <text id="static_instance-neighborhoods-0">
+            <value>Bronx</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select1/1:label">
+            <value>option 1</value>
+          </text>
+          <text id="static_instance-neighborhoods-2">
+            <value>Bel Air</value>
+          </text>
+          <text id="/widgets-dev/repeat/geopoint_widgets/my_geopoint_hide:label">
+            <value>Geopoint widget that hides input fields by default</value>
+          </text>
+          <text id="static_instance-list1-2">
+            <value form="image">jr://images/nuthatch.png</value>
+            <value>nuthatch</value>
+          </text>
+          <text id="static_instance-list1-0">
+            <value form="image">jr://images/kingfisher.png</value>
+            <value>kingfisher</value>
+          </text>
+          <text id="static_instance-list1-1">
+            <value form="image">jr://images/pigeon.png</value>
+            <value>pigeon</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group2/country2/usa:label">
+            <value>United States</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_test_label/no:label">
+            <value>No</value>
+          </text>
+        </translation>
+        <translation lang="Arabic (ar)">
+          <text id="/widgets-dev/repeat/select_widgets/grid_2_columns:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table/generated_table_list_label_53:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select1/7:label">
+            <value>افغان بیسیمافغان بیسیمافغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_1/yes:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/selectadvance/c:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/table_list_3:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/number_widgets/my_distress:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/date_time_widgets/my_date_month_year:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal_compact:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_1:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select/c:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_second_method/happy:label">
+            <value form="image">jr://images/happy.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/spinner_all:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/media_widgets/my_video:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/grid_2_columns/c:label">
+            <value form="image">jr://images/c.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_likert/5:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/selectadvance/d:label">
+            <value>روشن</value>
+          </text>
+          <text id="static_instance-happy_sad-0">
+            <value form="image">jr://images/happy.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/text_widgets/my_string:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table/happy_sad_michael/happy:label">
+            <value form="image">jr://images/happy.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/table_list_3/dk:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/display_widgets/my_trigger:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select1/4:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/spinner/c:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal_compact/dk:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/reserved_name_for_field_list_labels_45/dk:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal/5:label">
+            <value>روشن</value>
+          </text>
+          <text id="static_instance-agree5-3">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="static_instance-agree5-2">
+            <value>روشن</value>
+          </text>
+          <text id="static_instance-agree5-1">
+            <value>روشن</value>
+          </text>
+          <text id="static_instance-agree5-0">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group1/country:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="static_instance-a_b_c_d-1">
+            <value form="image">jr://images/b.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_test_label/yes:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/grid_2_columns/b:label">
+            <value form="image">jr://images/b.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_1:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="static_instance-a_b_c_d-2">
+            <value form="image">jr://images/c.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal/6:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/number_widgets:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group1/city:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_second_method:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/selectadvance:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_test_label/dk:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="static_instance-yes_no-3">
+            <value>روشن</value>
+          </text>
+          <text id="static_instance-yes_no-2">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="static_instance-yes_no-1">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal_compact/a:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/number_widgets/my_int:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_1/dk:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/selectadvance:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/geopoint_widgets:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal/1:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/media_widgets/my_image:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal/3:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_1/na:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_brian2:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select1/2:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_test_label/na:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/date_time_widgets/my_date_year:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/reserved_name_for_field_list_labels_45/no:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_likert:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group2/neighborhood2:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="static_instance-happy_sad-1">
+            <value form="image">jr://images/sad.jpg</value>
+          </text>
+          <text id="static_instance-list-0">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="static_instance-list-1">
+            <value>روشن</value>
+          </text>
+          <text id="static_instance-list-2">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="static_instance-list-3">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/number_widgets/my_int:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select/d:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_michael2:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_test_label:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal_compact:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_likert:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group1/country/nl:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_likert/3:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/date_time_widgets/dateTime:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/table_list_4/na:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/date_time_widgets/my_date_month_year:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal_compact:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/media_widgets/my_image:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/display_widgets/select_media:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/geopoint_widgets/my_geopoint:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table_2:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal/7:label">
+            <value>افغان بیسیمافغان بیسیمافغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_brian2/happy:label">
+            <value form="image">jr://images/happy.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/spinner/d:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group1/neighborhood:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/text_widgets/my_string:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_michael2/happy:label">
+            <value form="image">jr://images/happy.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/grid_2_columns:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_2/na:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/display_widgets/my_trigger:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_second_method/sad:label">
+            <value form="image">jr://images/sad.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal_compact/yes:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group2/country2/nl:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/grid_test_audio/b:label">
+            <value form="image">jr://images/b.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/grid_2_columns/d:label">
+            <value form="image">jr://images/d.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/text_widgets/my_long_text:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_2:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="static_instance-countries-0">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal/2:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/geopoint_widgets/my_geopoint_m:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/table_list_4/dk:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select/b:label">
+            <value>روشن</value>
+          </text>
+          <text id="static_instance-a_b-0">
+            <value form="image">jr://images/a.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/table_list_4/no:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_test_label:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/spinner/a:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/spinner:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group1/country/usa:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/date_time_widgets/dateTime:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/date_time_widgets:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select1:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select1/5:label">
+            <value>روشن</value>
+          </text>
+          <text id="static_instance-neighborhoods-5">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group2:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group2/country2:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal/5:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal/6:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_likert/4:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/grid_test:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/spinner_all/a:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/number_widgets/my_distress:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table/generated_table_list_label_53:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/media_widgets/my_barcode:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/spinner:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="static_instance-a_b_c_d-0">
+            <value form="image">jr://images/a.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group1/neighborhood:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="static_instance-a_b_c_d-3">
+            <value form="image">jr://images/d.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/display_widgets/select_media/nut:label">
+            <value form="image">jr://images/nuthatch.png</value>
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group1:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/grid_test_audio:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/grid_2_columns/a:label">
+            <value form="image">jr://images/a.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table/reserved_name_for_field_list_labels_54/sad:label">
+            <value form="image">jr://images/sad.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_1/no:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_2/no:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/geopoint_widgets/my_geopoint_hide:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal_compact:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/display_widgets/text_media:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table/happy_sad_michael/sad:label">
+            <value form="image">jr://images/sad.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group1/city:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/number_widgets/my_decimal:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/geopoint_widgets/my_geopoint_m:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_2:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select1/3:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_likert/1:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal/4:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal_compact/na:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table/reserved_name_for_field_list_labels_54/happy:label">
+            <value form="image">jr://images/happy.jpg</value>
+          </text>
+          <text id="static_instance-cities-3">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="static_instance-cities-2">
+            <value>روشن</value>
+          </text>
+          <text id="static_instance-cities-1">
+            <value>روشن</value>
+          </text>
+          <text id="static_instance-cities-0">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/grid_test_audio/a:label">
+            <value form="image">jr://images/a.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/media_widgets/my_audio:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="static_instance-cities-5">
+            <value>روشن</value>
+          </text>
+          <text id="static_instance-cities-4">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/table_list_3/yes:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group2/neighborhood2:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/display_widgets/select_media/king:label">
+            <value form="image">jr://images/kingfisher.png</value>
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal/7:label">
+            <value>افغان بیسیمافغان بیسیمافغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/intro:label">
+            <value>افغان بیسی
+
+افغان بیسیم افغان بیسیم
+ افغان بیسیم.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/grid_test/a:label">
+            <value form="image">jr://images/a.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/display_widgets/select_media:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/spinner_all/c:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal/8:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/selectadvance/a:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/grid_test/b:label">
+            <value form="image">jr://images/b.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/geopoint_widgets/my_geotrace:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/table_list_3/na:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal/8:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/date_time_widgets/my_date_year:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/spinner_all/b:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/table_list_3/no:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select1/8:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/grid_test:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select/a:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_brian2/sad:label">
+            <value form="image">jr://images/sad.jpg</value>
+          </text>
+          <text id="static_instance-a_b-1">
+            <value form="image">jr://images/b.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/display_widgets/my_output:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/date_time_widgets/my_date:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/reserved_name_for_field_list_labels_45/na:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_brian2:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/display_widgets:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal/2:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/table_list_4/yes:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/spinner_all:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group2/city2:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_2/yes:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/reserved_name_for_field_list_labels_45/yes:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/media_widgets/my_audio:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/text_widgets:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group2/country2:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/geopoint_widgets/my_geoshape:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/table_list_3:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select1/6:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/table_list_4:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/geopoint_widgets/my_geotrace:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_michael2/sad:label">
+            <value form="image">jr://images/sad.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/media_widgets/my_video:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="static_instance-list2-1">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="static_instance-neighborhoods-4">
+            <value>روشن</value>
+          </text>
+          <text id="static_instance-list2-3">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table/happy_sad_brian:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="static_instance-list2-5">
+            <value>روشن</value>
+          </text>
+          <text id="static_instance-list2-4">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/display_widgets/text_media:label">
+            <value form="audio">jr://audio/goldeneagle.mp3</value>
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_likert/2:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/media_widgets/my_barcode:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/generated_table_list_label_44:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/table_list_4:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table/happy_sad_brian/happy:label">
+            <value form="image">jr://images/happy.jpg</value>
+          </text>
+          <text id="/widgets-dev/repeat/number_widgets/my_decimal:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal_compact/c:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="static_instance-yes_no-0">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/spinner_all/d:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test2/generated_table_list_label_44:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="static_instance-countries-1">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal_compact/d:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table_2:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_michael2:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="static_instance-neighborhoods-1">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal/4:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/selectadvance/b:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/hidebranch:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="static_instance-list2-0">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal/3:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select1:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_2/dk:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table/happy_sad_michael:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/date_time_widgets/my_time:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select1_horizontal_compact/no:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/geopoint_widgets/my_geoshape:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/date_time_widgets/my_date:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="static_instance-list2-2">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/date_time_widgets/my_time:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="static_instance-neighborhoods-3">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="static_instance-agree5-4">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/display_widgets/select_media/pig:label">
+            <value form="image">jr://images/pigeon.png</value>
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/media_widgets:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/display_widgets/my_output:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/text_widgets/my_long_text:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal_compact/b:label">
+            <value>روشن</value>
+          </text>
+          <text id="static_instance-list2-7">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group2/city2:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/spinner/b:label">
+            <value>روشن</value>
+          </text>
+          <text id="static_instance-neighborhoods-8">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table/happy_sad_brian/sad:label">
+            <value form="image">jr://images/sad.jpg</value>
+          </text>
+          <text id="static_instance-list2-6">
+            <value>افغان بیسیمافغان بیسیمافغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_second_method:hint">
+            <value>شبکه موبایل من دارای پوشش خوب در افغانستان باشد.</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/select_horizontal/1:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/grid_test_audio:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/geopoint_widgets/my_geopoint:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="static_instance-neighborhoods-6">
+            <value>روشن روشن روشن</value>
+          </text>
+          <text id="static_instance-neighborhoods-7">
+            <value>روشن</value>
+          </text>
+          <text id="static_instance-neighborhoods-0">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/my_select1/1:label">
+            <value>روشن</value>
+          </text>
+          <text id="static_instance-neighborhoods-2">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/geopoint_widgets/my_geopoint_hide:label">
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="static_instance-list1-2">
+            <value form="image">jr://images/nuthatch.png</value>
+            <value>افغان بیسیم</value>
+          </text>
+          <text id="static_instance-list1-0">
+            <value form="image">jr://images/kingfisher.png</value>
+            <value>روشن</value>
+          </text>
+          <text id="static_instance-list1-1">
+            <value form="image">jr://images/pigeon.png</value>
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/cascading_widgets/group2/country2/usa:label">
+            <value>روشن</value>
+          </text>
+          <text id="/widgets-dev/repeat/select_widgets/table_list_test/table_list_test_label/no:label">
+            <value>افغان بیسیم</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <widgets-dev id="widgets-dev" version="201507272337">
+          <formhub>
+            <uuid/>
+          </formhub>
+          <intro/>
+          <hidebranch/>
+          <repeat jr:template="">
+            <text_widgets>
+              <my_string/>
+              <my_long_text/>
+            </text_widgets>
+            <number_widgets>
+              <my_int/>
+              <my_decimal>18.31</my_decimal>
+              <my_distress/>
+            </number_widgets>
+            <date_time_widgets>
+              <my_date>2010-06-15 00:00:00</my_date>
+              <my_date_month_year/>
+              <my_date_year/>
+              <my_time/>
+              <dateTime/>
+            </date_time_widgets>
+            <select_widgets>
+              <my_select>a c</my_select>
+              <select_horizontal_compact/>
+              <select_horizontal/>
+              <my_select1>8</my_select1>
+              <select1_horizontal_compact/>
+              <select1_horizontal/>
+              <select1_likert/>
+              <spinner/>
+              <spinner_all/>
+              <selectadvance/>
+              <grid_test/>
+              <grid_2_columns/>
+              <grid_test_audio/>
+              <table_list_test>
+                <table_list_test_label/>
+                <table_list_1/>
+                <table_list_2/>
+              </table_list_test>
+              <table_list_test2>
+                <generated_table_list_label_44/>
+                <reserved_name_for_field_list_labels_45/>
+                <table_list_3/>
+                <table_list_4/>
+              </table_list_test2>
+              <happy_sad_table_2>
+                <happy_sad_second_method/>
+                <happy_sad_brian2/>
+                <happy_sad_michael2/>
+              </happy_sad_table_2>
+              <happy_sad_table>
+                <generated_table_list_label_53/>
+                <reserved_name_for_field_list_labels_54/>
+                <happy_sad_brian/>
+                <happy_sad_michael/>
+              </happy_sad_table>
+            </select_widgets>
+            <cascading_widgets>
+              <group1>
+                <country/>
+                <city/>
+                <neighborhood/>
+              </group1>
+              <group2>
+                <country2/>
+                <city2/>
+                <neighborhood2/>
+              </group2>
+            </cascading_widgets>
+            <geopoint_widgets>
+              <my_geopoint/>
+              <my_geopoint_m/>
+              <my_geopoint_hide/>
+              <my_geotrace/>
+              <my_geoshape>7.9377 -11.5845 0 0;7.9324 -11.5902 0 0;7.927 -11.5857 0 0;7.925 -11.578 0 0;7.9267 -11.5722 0 0;7.9325 -11.5708 0 0;7.9372 -11.5737 0 0;7.9393 -11.579 0 0;7.9377 -11.5845 0 0</my_geoshape>
+            </geopoint_widgets>
+            <media_widgets>
+              <my_image/>
+              <my_audio/>
+              <my_video/>
+              <my_barcode/>
+            </media_widgets>
+            <display_widgets>
+              <my_output/>
+              <text_media/>
+              <select_media/>
+              <my_trigger/>
+            </display_widgets>
+          </repeat>
+          <meta>
+            <instanceID/>
+          </meta>
+        </widgets-dev>
+      </instance>
+      <instance id="cities">
+        <root>
+          <item>
+            <itextId>static_instance-cities-0</itextId>
+            <country>nl</country>
+            <name>ams</name>
+          </item>
+          <item>
+            <itextId>static_instance-cities-1</itextId>
+            <country>usa</country>
+            <name>den</name>
+          </item>
+          <item>
+            <itextId>static_instance-cities-2</itextId>
+            <country>usa</country>
+            <name>nyc</name>
+          </item>
+          <item>
+            <itextId>static_instance-cities-3</itextId>
+            <country>usa</country>
+            <name>la</name>
+          </item>
+          <item>
+            <itextId>static_instance-cities-4</itextId>
+            <country>nl</country>
+            <name>rot</name>
+          </item>
+          <item>
+            <itextId>static_instance-cities-5</itextId>
+            <country>nl</country>
+            <name>dro</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="neighborhoods">
+        <root>
+          <item>
+            <itextId>static_instance-neighborhoods-0</itextId>
+            <city>nyc</city>
+            <name>bronx</name>
+            <country>usa</country>
+          </item>
+          <item>
+            <itextId>static_instance-neighborhoods-1</itextId>
+            <city>nyc</city>
+            <name>harlem</name>
+            <country>usa</country>
+          </item>
+          <item>
+            <itextId>static_instance-neighborhoods-2</itextId>
+            <city>la</city>
+            <name>belair</name>
+            <country>usa</country>
+          </item>
+          <item>
+            <itextId>static_instance-neighborhoods-3</itextId>
+            <city>ams</city>
+            <name>wes</name>
+            <country>nl</country>
+          </item>
+          <item>
+            <itextId>static_instance-neighborhoods-4</itextId>
+            <city>den</city>
+            <name>parkhill</name>
+            <country>usa</country>
+          </item>
+          <item>
+            <itextId>static_instance-neighborhoods-5</itextId>
+            <city>rot</city>
+            <name>haven</name>
+            <country>nl</country>
+          </item>
+          <item>
+            <itextId>static_instance-neighborhoods-6</itextId>
+            <city>ams</city>
+            <name>dam</name>
+            <country>nl</country>
+          </item>
+          <item>
+            <itextId>static_instance-neighborhoods-7</itextId>
+            <city>rot</city>
+            <name>centrum</name>
+            <country>nl</country>
+          </item>
+          <item>
+            <itextId>static_instance-neighborhoods-8</itextId>
+            <city>dro</city>
+            <name>haven</name>
+            <country>nl</country>
+          </item>
+        </root>
+      </instance>
+      <instance id="countries">
+        <root>
+          <item>
+            <itextId>static_instance-countries-0</itextId>
+            <name>nl</name>
+          </item>
+          <item>
+            <itextId>static_instance-countries-1</itextId>
+            <name>usa</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="list">
+        <root>
+          <item>
+            <itextId>static_instance-list-0</itextId>
+            <name>a</name>
+          </item>
+          <item>
+            <itextId>static_instance-list-1</itextId>
+            <name>b</name>
+          </item>
+          <item>
+            <itextId>static_instance-list-2</itextId>
+            <name>c</name>
+          </item>
+          <item>
+            <itextId>static_instance-list-3</itextId>
+            <name>d</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="a_b_c_d">
+        <root>
+          <item>
+            <itextId>static_instance-a_b_c_d-0</itextId>
+            <name>a</name>
+          </item>
+          <item>
+            <itextId>static_instance-a_b_c_d-1</itextId>
+            <name>b</name>
+          </item>
+          <item>
+            <itextId>static_instance-a_b_c_d-2</itextId>
+            <name>c</name>
+          </item>
+          <item>
+            <itextId>static_instance-a_b_c_d-3</itextId>
+            <name>d</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="list1">
+        <root>
+          <item>
+            <itextId>static_instance-list1-0</itextId>
+            <name>king</name>
+          </item>
+          <item>
+            <itextId>static_instance-list1-1</itextId>
+            <name>pig</name>
+          </item>
+          <item>
+            <itextId>static_instance-list1-2</itextId>
+            <name>nut</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="happy_sad">
+        <root>
+          <item>
+            <itextId>static_instance-happy_sad-0</itextId>
+            <name>happy</name>
+          </item>
+          <item>
+            <itextId>static_instance-happy_sad-1</itextId>
+            <name>sad</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="list2">
+        <root>
+          <item>
+            <itextId>static_instance-list2-0</itextId>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>static_instance-list2-1</itextId>
+            <name>2</name>
+          </item>
+          <item>
+            <itextId>static_instance-list2-2</itextId>
+            <name>3</name>
+          </item>
+          <item>
+            <itextId>static_instance-list2-3</itextId>
+            <name>4</name>
+          </item>
+          <item>
+            <itextId>static_instance-list2-4</itextId>
+            <name>5</name>
+          </item>
+          <item>
+            <itextId>static_instance-list2-5</itextId>
+            <name>6</name>
+          </item>
+          <item>
+            <itextId>static_instance-list2-6</itextId>
+            <name>7</name>
+          </item>
+          <item>
+            <itextId>static_instance-list2-7</itextId>
+            <name>8</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="a_b">
+        <root>
+          <item>
+            <itextId>static_instance-a_b-0</itextId>
+            <name>a</name>
+          </item>
+          <item>
+            <itextId>static_instance-a_b-1</itextId>
+            <name>b</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="agree5">
+        <root>
+          <item>
+            <itextId>static_instance-agree5-0</itextId>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>static_instance-agree5-1</itextId>
+            <name>2</name>
+          </item>
+          <item>
+            <itextId>static_instance-agree5-2</itextId>
+            <name>3</name>
+          </item>
+          <item>
+            <itextId>static_instance-agree5-3</itextId>
+            <name>4</name>
+          </item>
+          <item>
+            <itextId>static_instance-agree5-4</itextId>
+            <name>5</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <itextId>static_instance-yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>static_instance-yes_no-1</itextId>
+            <name>no</name>
+          </item>
+          <item>
+            <itextId>static_instance-yes_no-2</itextId>
+            <name>dk</name>
+          </item>
+          <item>
+            <itextId>static_instance-yes_no-3</itextId>
+            <name>na</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/widgets-dev/intro" readonly="true()" type="string"/>
+      <bind nodeset="/widgets-dev/hidebranch" type="string"/>
+      <bind nodeset="/widgets-dev/repeat" relevant="string-length( /widgets-dev/hidebranch ) = 0"/>
+      <bind nodeset="/widgets-dev/repeat/text_widgets/my_string" type="string"/>
+      <bind nodeset="/widgets-dev/repeat/text_widgets/my_long_text" relevant="string-length(  /widgets-dev/repeat/text_widgets/my_string  ) &gt; 0" type="string"/>
+      <bind constraint=". &lt; 10" nodeset="/widgets-dev/repeat/number_widgets/my_int" type="int"/>
+      <bind constraint=". &gt; 10.51 and . &lt; 18.39" nodeset="/widgets-dev/repeat/number_widgets/my_decimal" type="decimal"/>
+      <bind constraint=". &gt;= 0 and . &lt;= 10" nodeset="/widgets-dev/repeat/number_widgets/my_distress" type="int"/>
+      <bind constraint=". &gt;= today()" nodeset="/widgets-dev/repeat/date_time_widgets/my_date" type="date"/>
+      <bind nodeset="/widgets-dev/repeat/date_time_widgets/my_date_month_year" type="date"/>
+      <bind nodeset="/widgets-dev/repeat/date_time_widgets/my_date_year" type="date"/>
+      <bind nodeset="/widgets-dev/repeat/date_time_widgets/my_time" type="time"/>
+      <bind nodeset="/widgets-dev/repeat/date_time_widgets/dateTime" type="dateTime"/>
+      <bind constraint="not(selected(., 'c') and selected(., 'd'))" nodeset="/widgets-dev/repeat/select_widgets/my_select" type="select"/>
+      <bind nodeset="/widgets-dev/repeat/select_widgets/select_horizontal_compact" type="select"/>
+      <bind nodeset="/widgets-dev/repeat/select_widgets/select_horizontal" type="select"/>
+      <bind nodeset="/widgets-dev/repeat/select_widgets/my_select1" type="select1"/>
+      <bind nodeset="/widgets-dev/repeat/select_widgets/select1_horizontal_compact" type="select1"/>
+      <bind nodeset="/widgets-dev/repeat/select_widgets/select1_horizontal" type="select1"/>
+      <bind nodeset="/widgets-dev/repeat/select_widgets/select1_likert" type="select1"/>
+      <bind nodeset="/widgets-dev/repeat/select_widgets/spinner" type="select1"/>
+      <bind nodeset="/widgets-dev/repeat/select_widgets/spinner_all" type="select"/>
+      <bind nodeset="/widgets-dev/repeat/select_widgets/selectadvance" type="select1"/>
+      <bind nodeset="/widgets-dev/repeat/select_widgets/grid_test" type="select1"/>
+      <bind nodeset="/widgets-dev/repeat/select_widgets/grid_2_columns" type="select1"/>
+      <bind nodeset="/widgets-dev/repeat/select_widgets/grid_test_audio" type="select1"/>
+      <bind nodeset="/widgets-dev/repeat/select_widgets/table_list_test/table_list_test_label" type="select1"/>
+      <bind nodeset="/widgets-dev/repeat/select_widgets/table_list_test/table_list_1" type="select1"/>
+      <bind nodeset="/widgets-dev/repeat/select_widgets/table_list_test/table_list_2" type="select1"/>
+      <bind nodeset="/widgets-dev/repeat/select_widgets/table_list_test2/generated_table_list_label_44" readonly="true()" type="string"/>
+      <bind nodeset="/widgets-dev/repeat/select_widgets/table_list_test2/reserved_name_for_field_list_labels_45" type="select1"/>
+      <bind nodeset="/widgets-dev/repeat/select_widgets/table_list_test2/table_list_3" type="select1"/>
+      <bind nodeset="/widgets-dev/repeat/select_widgets/table_list_test2/table_list_4" type="select1"/>
+      <bind nodeset="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_second_method" type="select"/>
+      <bind nodeset="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_brian2" type="select"/>
+      <bind nodeset="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_michael2" type="select"/>
+      <bind nodeset="/widgets-dev/repeat/select_widgets/happy_sad_table/generated_table_list_label_53" readonly="true()" type="string"/>
+      <bind nodeset="/widgets-dev/repeat/select_widgets/happy_sad_table/reserved_name_for_field_list_labels_54" type="select"/>
+      <bind nodeset="/widgets-dev/repeat/select_widgets/happy_sad_table/happy_sad_brian" type="select"/>
+      <bind nodeset="/widgets-dev/repeat/select_widgets/happy_sad_table/happy_sad_michael" type="select"/>
+      <bind nodeset="/widgets-dev/repeat/cascading_widgets/group1/country" type="select1"/>
+      <bind nodeset="/widgets-dev/repeat/cascading_widgets/group1/city" type="select1"/>
+      <bind nodeset="/widgets-dev/repeat/cascading_widgets/group1/neighborhood" type="select1"/>
+      <bind nodeset="/widgets-dev/repeat/cascading_widgets/group2/country2" type="select1"/>
+      <bind nodeset="/widgets-dev/repeat/cascading_widgets/group2/city2" type="select1"/>
+      <bind nodeset="/widgets-dev/repeat/cascading_widgets/group2/neighborhood2" type="select1"/>
+      <bind nodeset="/widgets-dev/repeat/geopoint_widgets/my_geopoint" type="geopoint"/>
+      <bind nodeset="/widgets-dev/repeat/geopoint_widgets/my_geopoint_m" type="geopoint"/>
+      <bind nodeset="/widgets-dev/repeat/geopoint_widgets/my_geopoint_hide" type="geopoint"/>
+      <bind nodeset="/widgets-dev/repeat/geopoint_widgets/my_geotrace" type="geotrace"/>
+      <bind nodeset="/widgets-dev/repeat/geopoint_widgets/my_geoshape" type="geoshape"/>
+      <bind nodeset="/widgets-dev/repeat/media_widgets/my_image" type="binary"/>
+      <bind nodeset="/widgets-dev/repeat/media_widgets/my_audio" type="binary"/>
+      <bind nodeset="/widgets-dev/repeat/media_widgets/my_video" type="binary"/>
+      <bind nodeset="/widgets-dev/repeat/media_widgets/my_barcode" type="barcode"/>
+      <bind nodeset="/widgets-dev/repeat/display_widgets/my_output" readonly="true()" type="string"/>
+      <bind nodeset="/widgets-dev/repeat/display_widgets/text_media" type="string"/>
+      <bind nodeset="/widgets-dev/repeat/display_widgets/select_media" type="select1"/>
+      <bind nodeset="/widgets-dev/repeat/display_widgets/my_trigger" required="true()"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/widgets-dev/meta/instanceID" readonly="true()" type="string"/>
+      <bind calculate="'5c9bde21a98b4b2889607b0a6f56b9e3'" nodeset="/widgets-dev/formhub/uuid" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="theme-formhub">
+    <input ref="/widgets-dev/intro">
+      <label ref="jr:itext('/widgets-dev/intro:label')"/>
+    </input>
+    <input ref="/widgets-dev/hidebranch">
+      <label ref="jr:itext('/widgets-dev/hidebranch:label')"/>
+    </input>
+    <group ref="/widgets-dev/repeat">
+      <label/>
+      <repeat nodeset="/widgets-dev/repeat">
+        <group ref="/widgets-dev/repeat/text_widgets">
+          <label ref="jr:itext('/widgets-dev/repeat/text_widgets:label')"/>
+          <input ref="/widgets-dev/repeat/text_widgets/my_string">
+            <label ref="jr:itext('/widgets-dev/repeat/text_widgets/my_string:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/text_widgets/my_string:hint')"/>
+          </input>
+          <input appearance="multiline" ref="/widgets-dev/repeat/text_widgets/my_long_text">
+            <label ref="jr:itext('/widgets-dev/repeat/text_widgets/my_long_text:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/text_widgets/my_long_text:hint')"/>
+          </input>
+        </group>
+        <group ref="/widgets-dev/repeat/number_widgets">
+          <label ref="jr:itext('/widgets-dev/repeat/number_widgets:label')"/>
+          <input ref="/widgets-dev/repeat/number_widgets/my_int">
+            <label ref="jr:itext('/widgets-dev/repeat/number_widgets/my_int:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/number_widgets/my_int:hint')"/>
+          </input>
+          <input ref="/widgets-dev/repeat/number_widgets/my_decimal">
+            <label ref="jr:itext('/widgets-dev/repeat/number_widgets/my_decimal:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/number_widgets/my_decimal:hint')"/>
+          </input>
+          <input appearance="distress" ref="/widgets-dev/repeat/number_widgets/my_distress">
+            <label ref="jr:itext('/widgets-dev/repeat/number_widgets/my_distress:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/number_widgets/my_distress:hint')"/>
+          </input>
+        </group>
+        <group ref="/widgets-dev/repeat/date_time_widgets">
+          <label ref="jr:itext('/widgets-dev/repeat/date_time_widgets:label')"/>
+          <input ref="/widgets-dev/repeat/date_time_widgets/my_date">
+            <label ref="jr:itext('/widgets-dev/repeat/date_time_widgets/my_date:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/date_time_widgets/my_date:hint')"/>
+          </input>
+          <input appearance="month-year" ref="/widgets-dev/repeat/date_time_widgets/my_date_month_year">
+            <label ref="jr:itext('/widgets-dev/repeat/date_time_widgets/my_date_month_year:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/date_time_widgets/my_date_month_year:hint')"/>
+          </input>
+          <input appearance="year" ref="/widgets-dev/repeat/date_time_widgets/my_date_year">
+            <label ref="jr:itext('/widgets-dev/repeat/date_time_widgets/my_date_year:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/date_time_widgets/my_date_year:hint')"/>
+          </input>
+          <input ref="/widgets-dev/repeat/date_time_widgets/my_time">
+            <label ref="jr:itext('/widgets-dev/repeat/date_time_widgets/my_time:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/date_time_widgets/my_time:hint')"/>
+          </input>
+          <input ref="/widgets-dev/repeat/date_time_widgets/dateTime">
+            <label ref="jr:itext('/widgets-dev/repeat/date_time_widgets/dateTime:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/date_time_widgets/dateTime:hint')"/>
+          </input>
+        </group>
+        <group ref="/widgets-dev/repeat/select_widgets">
+          <label ref="jr:itext('/widgets-dev/repeat/select_widgets:label')"/>
+          <select ref="/widgets-dev/repeat/select_widgets/my_select">
+            <label ref="jr:itext('/widgets-dev/repeat/select_widgets/my_select:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/select_widgets/my_select:hint')"/>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/my_select/a:label')"/>
+              <value>a</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/my_select/b:label')"/>
+              <value>b</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/my_select/c:label')"/>
+              <value>c</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/my_select/d:label')"/>
+              <value>d</value>
+            </item>
+          </select>
+          <select appearance="horizontal-compact" ref="/widgets-dev/repeat/select_widgets/select_horizontal_compact">
+            <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select_horizontal_compact:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/select_widgets/select_horizontal_compact:hint')"/>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select_horizontal_compact/a:label')"/>
+              <value>a</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select_horizontal_compact/b:label')"/>
+              <value>b</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select_horizontal_compact/c:label')"/>
+              <value>c</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select_horizontal_compact/d:label')"/>
+              <value>d</value>
+            </item>
+          </select>
+          <select appearance="horizontal" ref="/widgets-dev/repeat/select_widgets/select_horizontal">
+            <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select_horizontal:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/select_widgets/select_horizontal:hint')"/>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select_horizontal/1:label')"/>
+              <value>1</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select_horizontal/2:label')"/>
+              <value>2</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select_horizontal/3:label')"/>
+              <value>3</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select_horizontal/4:label')"/>
+              <value>4</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select_horizontal/5:label')"/>
+              <value>5</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select_horizontal/6:label')"/>
+              <value>6</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select_horizontal/7:label')"/>
+              <value>7</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select_horizontal/8:label')"/>
+              <value>8</value>
+            </item>
+          </select>
+          <select1 ref="/widgets-dev/repeat/select_widgets/my_select1">
+            <label ref="jr:itext('/widgets-dev/repeat/select_widgets/my_select1:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/select_widgets/my_select1:hint')"/>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/my_select1/1:label')"/>
+              <value>1</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/my_select1/2:label')"/>
+              <value>2</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/my_select1/3:label')"/>
+              <value>3</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/my_select1/4:label')"/>
+              <value>4</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/my_select1/5:label')"/>
+              <value>5</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/my_select1/6:label')"/>
+              <value>6</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/my_select1/7:label')"/>
+              <value>7</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/my_select1/8:label')"/>
+              <value>8</value>
+            </item>
+          </select1>
+          <select1 appearance="horizontal-compact" ref="/widgets-dev/repeat/select_widgets/select1_horizontal_compact">
+            <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select1_horizontal_compact:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/select_widgets/select1_horizontal_compact:hint')"/>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select1_horizontal_compact/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select1_horizontal_compact/no:label')"/>
+              <value>no</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select1_horizontal_compact/dk:label')"/>
+              <value>dk</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select1_horizontal_compact/na:label')"/>
+              <value>na</value>
+            </item>
+          </select1>
+          <select1 appearance="horizontal" ref="/widgets-dev/repeat/select_widgets/select1_horizontal">
+            <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select1_horizontal:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/select_widgets/select1_horizontal:hint')"/>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select1_horizontal/1:label')"/>
+              <value>1</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select1_horizontal/2:label')"/>
+              <value>2</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select1_horizontal/3:label')"/>
+              <value>3</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select1_horizontal/4:label')"/>
+              <value>4</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select1_horizontal/5:label')"/>
+              <value>5</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select1_horizontal/6:label')"/>
+              <value>6</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select1_horizontal/7:label')"/>
+              <value>7</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select1_horizontal/8:label')"/>
+              <value>8</value>
+            </item>
+          </select1>
+          <select1 appearance="likert" ref="/widgets-dev/repeat/select_widgets/select1_likert">
+            <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select1_likert:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/select_widgets/select1_likert:hint')"/>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select1_likert/1:label')"/>
+              <value>1</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select1_likert/2:label')"/>
+              <value>2</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select1_likert/3:label')"/>
+              <value>3</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select1_likert/4:label')"/>
+              <value>4</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/select1_likert/5:label')"/>
+              <value>5</value>
+            </item>
+          </select1>
+          <select1 appearance="minimal" ref="/widgets-dev/repeat/select_widgets/spinner">
+            <label ref="jr:itext('/widgets-dev/repeat/select_widgets/spinner:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/select_widgets/spinner:hint')"/>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/spinner/a:label')"/>
+              <value>a</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/spinner/b:label')"/>
+              <value>b</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/spinner/c:label')"/>
+              <value>c</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/spinner/d:label')"/>
+              <value>d</value>
+            </item>
+          </select1>
+          <select appearance="minimal" ref="/widgets-dev/repeat/select_widgets/spinner_all">
+            <label ref="jr:itext('/widgets-dev/repeat/select_widgets/spinner_all:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/select_widgets/spinner_all:hint')"/>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/spinner_all/a:label')"/>
+              <value>a</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/spinner_all/b:label')"/>
+              <value>b</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/spinner_all/c:label')"/>
+              <value>c</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/spinner_all/d:label')"/>
+              <value>d</value>
+            </item>
+          </select>
+          <select1 appearance="quick" ref="/widgets-dev/repeat/select_widgets/selectadvance">
+            <label ref="jr:itext('/widgets-dev/repeat/select_widgets/selectadvance:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/select_widgets/selectadvance:hint')"/>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/selectadvance/a:label')"/>
+              <value>a</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/selectadvance/b:label')"/>
+              <value>b</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/selectadvance/c:label')"/>
+              <value>c</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/selectadvance/d:label')"/>
+              <value>d</value>
+            </item>
+          </select1>
+          <select1 appearance="compact" ref="/widgets-dev/repeat/select_widgets/grid_test">
+            <label ref="jr:itext('/widgets-dev/repeat/select_widgets/grid_test:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/select_widgets/grid_test:hint')"/>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/grid_test/a:label')"/>
+              <value>a</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/grid_test/b:label')"/>
+              <value>b</value>
+            </item>
+          </select1>
+          <select1 appearance="compact-2" ref="/widgets-dev/repeat/select_widgets/grid_2_columns">
+            <label ref="jr:itext('/widgets-dev/repeat/select_widgets/grid_2_columns:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/select_widgets/grid_2_columns:hint')"/>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/grid_2_columns/a:label')"/>
+              <value>a</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/grid_2_columns/b:label')"/>
+              <value>b</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/grid_2_columns/c:label')"/>
+              <value>c</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/grid_2_columns/d:label')"/>
+              <value>d</value>
+            </item>
+          </select1>
+          <select1 appearance="quickcompact" ref="/widgets-dev/repeat/select_widgets/grid_test_audio">
+            <label ref="jr:itext('/widgets-dev/repeat/select_widgets/grid_test_audio:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/select_widgets/grid_test_audio:hint')"/>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/grid_test_audio/a:label')"/>
+              <value>a</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/grid_test_audio/b:label')"/>
+              <value>b</value>
+            </item>
+          </select1>
+          <group appearance="field-list" ref="/widgets-dev/repeat/select_widgets/table_list_test">
+            <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test:label')"/>
+            <select1 appearance="label" ref="/widgets-dev/repeat/select_widgets/table_list_test/table_list_test_label">
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test/table_list_test_label:label')"/>
+              <hint ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test/table_list_test_label:hint')"/>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test/table_list_test_label/yes:label')"/>
+                <value>yes</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test/table_list_test_label/no:label')"/>
+                <value>no</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test/table_list_test_label/dk:label')"/>
+                <value>dk</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test/table_list_test_label/na:label')"/>
+                <value>na</value>
+              </item>
+            </select1>
+            <select1 appearance="list-nolabel" ref="/widgets-dev/repeat/select_widgets/table_list_test/table_list_1">
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test/table_list_1:label')"/>
+              <hint ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test/table_list_1:hint')"/>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test/table_list_1/yes:label')"/>
+                <value>yes</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test/table_list_1/no:label')"/>
+                <value>no</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test/table_list_1/dk:label')"/>
+                <value>dk</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test/table_list_1/na:label')"/>
+                <value>na</value>
+              </item>
+            </select1>
+            <select1 appearance="list-nolabel" ref="/widgets-dev/repeat/select_widgets/table_list_test/table_list_2">
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test/table_list_2:label')"/>
+              <hint ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test/table_list_2:hint')"/>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test/table_list_2/yes:label')"/>
+                <value>yes</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test/table_list_2/no:label')"/>
+                <value>no</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test/table_list_2/dk:label')"/>
+                <value>dk</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test/table_list_2/na:label')"/>
+                <value>na</value>
+              </item>
+            </select1>
+          </group>
+          <group appearance="field-list" ref="/widgets-dev/repeat/select_widgets/table_list_test2">
+            <input ref="/widgets-dev/repeat/select_widgets/table_list_test2/generated_table_list_label_44">
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test2/generated_table_list_label_44:label')"/>
+              <hint ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test2/generated_table_list_label_44:hint')"/>
+            </input>
+            <select1 appearance="label" ref="/widgets-dev/repeat/select_widgets/table_list_test2/reserved_name_for_field_list_labels_45">
+              <label/>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test2/reserved_name_for_field_list_labels_45/yes:label')"/>
+                <value>yes</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test2/reserved_name_for_field_list_labels_45/no:label')"/>
+                <value>no</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test2/reserved_name_for_field_list_labels_45/dk:label')"/>
+                <value>dk</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test2/reserved_name_for_field_list_labels_45/na:label')"/>
+                <value>na</value>
+              </item>
+            </select1>
+            <select1 appearance="list-nolabel" ref="/widgets-dev/repeat/select_widgets/table_list_test2/table_list_3">
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test2/table_list_3:label')"/>
+              <hint ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test2/table_list_3:hint')"/>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test2/table_list_3/yes:label')"/>
+                <value>yes</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test2/table_list_3/no:label')"/>
+                <value>no</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test2/table_list_3/dk:label')"/>
+                <value>dk</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test2/table_list_3/na:label')"/>
+                <value>na</value>
+              </item>
+            </select1>
+            <select1 appearance="list-nolabel" ref="/widgets-dev/repeat/select_widgets/table_list_test2/table_list_4">
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test2/table_list_4:label')"/>
+              <hint ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test2/table_list_4:hint')"/>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test2/table_list_4/yes:label')"/>
+                <value>yes</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test2/table_list_4/no:label')"/>
+                <value>no</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test2/table_list_4/dk:label')"/>
+                <value>dk</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/table_list_test2/table_list_4/na:label')"/>
+                <value>na</value>
+              </item>
+            </select1>
+          </group>
+          <group appearance="field-list" ref="/widgets-dev/repeat/select_widgets/happy_sad_table_2">
+            <label ref="jr:itext('/widgets-dev/repeat/select_widgets/happy_sad_table_2:label')"/>
+            <select appearance="label" ref="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_second_method">
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_second_method:label')"/>
+              <hint ref="jr:itext('/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_second_method:hint')"/>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_second_method/happy:label')"/>
+                <value>happy</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_second_method/sad:label')"/>
+                <value>sad</value>
+              </item>
+            </select>
+            <select appearance="list-nolabel" ref="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_brian2">
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_brian2:label')"/>
+              <hint ref="jr:itext('/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_brian2:hint')"/>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_brian2/happy:label')"/>
+                <value>happy</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_brian2/sad:label')"/>
+                <value>sad</value>
+              </item>
+            </select>
+            <select appearance="list-nolabel" ref="/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_michael2">
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_michael2:label')"/>
+              <hint ref="jr:itext('/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_michael2:hint')"/>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_michael2/happy:label')"/>
+                <value>happy</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/happy_sad_table_2/happy_sad_michael2/sad:label')"/>
+                <value>sad</value>
+              </item>
+            </select>
+          </group>
+          <group appearance="field-list" ref="/widgets-dev/repeat/select_widgets/happy_sad_table">
+            <input ref="/widgets-dev/repeat/select_widgets/happy_sad_table/generated_table_list_label_53">
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/happy_sad_table/generated_table_list_label_53:label')"/>
+              <hint ref="jr:itext('/widgets-dev/repeat/select_widgets/happy_sad_table/generated_table_list_label_53:hint')"/>
+            </input>
+            <select appearance="label" ref="/widgets-dev/repeat/select_widgets/happy_sad_table/reserved_name_for_field_list_labels_54">
+              <label/>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/happy_sad_table/reserved_name_for_field_list_labels_54/happy:label')"/>
+                <value>happy</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/happy_sad_table/reserved_name_for_field_list_labels_54/sad:label')"/>
+                <value>sad</value>
+              </item>
+            </select>
+            <select appearance="list-nolabel" ref="/widgets-dev/repeat/select_widgets/happy_sad_table/happy_sad_brian">
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/happy_sad_table/happy_sad_brian:label')"/>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/happy_sad_table/happy_sad_brian/happy:label')"/>
+                <value>happy</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/happy_sad_table/happy_sad_brian/sad:label')"/>
+                <value>sad</value>
+              </item>
+            </select>
+            <select appearance="list-nolabel" ref="/widgets-dev/repeat/select_widgets/happy_sad_table/happy_sad_michael">
+              <label ref="jr:itext('/widgets-dev/repeat/select_widgets/happy_sad_table/happy_sad_michael:label')"/>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/happy_sad_table/happy_sad_michael/happy:label')"/>
+                <value>happy</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/select_widgets/happy_sad_table/happy_sad_michael/sad:label')"/>
+                <value>sad</value>
+              </item>
+            </select>
+          </group>
+        </group>
+        <group ref="/widgets-dev/repeat/cascading_widgets">
+          <label ref="jr:itext('/widgets-dev/repeat/cascading_widgets:label')"/>
+          <group ref="/widgets-dev/repeat/cascading_widgets/group1">
+            <label ref="jr:itext('/widgets-dev/repeat/cascading_widgets/group1:label')"/>
+            <select1 ref="/widgets-dev/repeat/cascading_widgets/group1/country">
+              <label ref="jr:itext('/widgets-dev/repeat/cascading_widgets/group1/country:label')"/>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/cascading_widgets/group1/country/nl:label')"/>
+                <value>nl</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/cascading_widgets/group1/country/usa:label')"/>
+                <value>usa</value>
+              </item>
+            </select1>
+            <select1 ref="/widgets-dev/repeat/cascading_widgets/group1/city">
+              <label ref="jr:itext('/widgets-dev/repeat/cascading_widgets/group1/city:label')"/>
+              <hint ref="jr:itext('/widgets-dev/repeat/cascading_widgets/group1/city:hint')"/>
+              <itemset nodeset="instance('cities')/root/item[country= /widgets-dev/repeat/cascading_widgets/group1/country ]">
+                <value ref="name"/>
+                <label ref="jr:itext(itextId)"/>
+              </itemset>
+            </select1>
+            <select1 ref="/widgets-dev/repeat/cascading_widgets/group1/neighborhood">
+              <label ref="jr:itext('/widgets-dev/repeat/cascading_widgets/group1/neighborhood:label')"/>
+              <hint ref="jr:itext('/widgets-dev/repeat/cascading_widgets/group1/neighborhood:hint')"/>
+              <itemset nodeset="instance('neighborhoods')/root/item[country= /widgets-dev/repeat/cascading_widgets/group1/country  and city= /widgets-dev/repeat/cascading_widgets/group1/city ]">
+                <value ref="name"/>
+                <label ref="jr:itext(itextId)"/>
+              </itemset>
+            </select1>
+          </group>
+          <group ref="/widgets-dev/repeat/cascading_widgets/group2">
+            <label ref="jr:itext('/widgets-dev/repeat/cascading_widgets/group2:label')"/>
+            <select1 appearance="minimal" ref="/widgets-dev/repeat/cascading_widgets/group2/country2">
+              <label ref="jr:itext('/widgets-dev/repeat/cascading_widgets/group2/country2:label')"/>
+              <hint ref="jr:itext('/widgets-dev/repeat/cascading_widgets/group2/country2:hint')"/>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/cascading_widgets/group2/country2/nl:label')"/>
+                <value>nl</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/widgets-dev/repeat/cascading_widgets/group2/country2/usa:label')"/>
+                <value>usa</value>
+              </item>
+            </select1>
+            <select1 appearance="minimal" ref="/widgets-dev/repeat/cascading_widgets/group2/city2">
+              <label ref="jr:itext('/widgets-dev/repeat/cascading_widgets/group2/city2:label')"/>
+              <hint ref="jr:itext('/widgets-dev/repeat/cascading_widgets/group2/city2:hint')"/>
+              <itemset nodeset="instance('cities')/root/item[country= /widgets-dev/repeat/cascading_widgets/group2/country2 ]">
+                <value ref="name"/>
+                <label ref="jr:itext(itextId)"/>
+              </itemset>
+            </select1>
+            <select1 appearance="minimal" ref="/widgets-dev/repeat/cascading_widgets/group2/neighborhood2">
+              <label ref="jr:itext('/widgets-dev/repeat/cascading_widgets/group2/neighborhood2:label')"/>
+              <hint ref="jr:itext('/widgets-dev/repeat/cascading_widgets/group2/neighborhood2:hint')"/>
+              <itemset nodeset="instance('neighborhoods')/root/item[country= /widgets-dev/repeat/cascading_widgets/group2/country2  and city= /widgets-dev/repeat/cascading_widgets/group2/city2 ]">
+                <value ref="name"/>
+                <label ref="jr:itext(itextId)"/>
+              </itemset>
+            </select1>
+          </group>
+        </group>
+        <group ref="/widgets-dev/repeat/geopoint_widgets">
+          <label ref="jr:itext('/widgets-dev/repeat/geopoint_widgets:label')"/>
+          <input ref="/widgets-dev/repeat/geopoint_widgets/my_geopoint">
+            <label ref="jr:itext('/widgets-dev/repeat/geopoint_widgets/my_geopoint:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/geopoint_widgets/my_geopoint:hint')"/>
+          </input>
+          <input appearance="maps" ref="/widgets-dev/repeat/geopoint_widgets/my_geopoint_m">
+            <label ref="jr:itext('/widgets-dev/repeat/geopoint_widgets/my_geopoint_m:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/geopoint_widgets/my_geopoint_m:hint')"/>
+          </input>
+          <input appearance="maps hide-input" ref="/widgets-dev/repeat/geopoint_widgets/my_geopoint_hide">
+            <label ref="jr:itext('/widgets-dev/repeat/geopoint_widgets/my_geopoint_hide:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/geopoint_widgets/my_geopoint_hide:hint')"/>
+          </input>
+          <input appearance="maps hide-input" ref="/widgets-dev/repeat/geopoint_widgets/my_geotrace">
+            <label ref="jr:itext('/widgets-dev/repeat/geopoint_widgets/my_geotrace:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/geopoint_widgets/my_geotrace:hint')"/>
+          </input>
+          <input appearance="maps hide-input" ref="/widgets-dev/repeat/geopoint_widgets/my_geoshape">
+            <label ref="jr:itext('/widgets-dev/repeat/geopoint_widgets/my_geoshape:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/geopoint_widgets/my_geoshape:hint')"/>
+          </input>
+        </group>
+        <group ref="/widgets-dev/repeat/media_widgets">
+          <label ref="jr:itext('/widgets-dev/repeat/media_widgets:label')"/>
+          <upload mediatype="image/*" ref="/widgets-dev/repeat/media_widgets/my_image">
+            <label ref="jr:itext('/widgets-dev/repeat/media_widgets/my_image:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/media_widgets/my_image:hint')"/>
+          </upload>
+          <upload mediatype="audio/*" ref="/widgets-dev/repeat/media_widgets/my_audio">
+            <label ref="jr:itext('/widgets-dev/repeat/media_widgets/my_audio:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/media_widgets/my_audio:hint')"/>
+          </upload>
+          <upload mediatype="video/*" ref="/widgets-dev/repeat/media_widgets/my_video">
+            <label ref="jr:itext('/widgets-dev/repeat/media_widgets/my_video:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/media_widgets/my_video:hint')"/>
+          </upload>
+          <input ref="/widgets-dev/repeat/media_widgets/my_barcode">
+            <label ref="jr:itext('/widgets-dev/repeat/media_widgets/my_barcode:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/media_widgets/my_barcode:hint')"/>
+          </input>
+        </group>
+        <group ref="/widgets-dev/repeat/display_widgets">
+          <label ref="jr:itext('/widgets-dev/repeat/display_widgets:label')"/>
+          <input ref="/widgets-dev/repeat/display_widgets/my_output">
+            <label ref="jr:itext('/widgets-dev/repeat/display_widgets/my_output:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/display_widgets/my_output:hint')"/>
+          </input>
+          <input ref="/widgets-dev/repeat/display_widgets/text_media">
+            <label ref="jr:itext('/widgets-dev/repeat/display_widgets/text_media:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/display_widgets/text_media:hint')"/>
+          </input>
+          <select1 ref="/widgets-dev/repeat/display_widgets/select_media">
+            <label ref="jr:itext('/widgets-dev/repeat/display_widgets/select_media:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/display_widgets/select_media:hint')"/>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/display_widgets/select_media/king:label')"/>
+              <value>king</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/display_widgets/select_media/pig:label')"/>
+              <value>pig</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/widgets-dev/repeat/display_widgets/select_media/nut:label')"/>
+              <value>nut</value>
+            </item>
+          </select1>
+          <trigger ref="/widgets-dev/repeat/display_widgets/my_trigger">
+            <label ref="jr:itext('/widgets-dev/repeat/display_widgets/my_trigger:label')"/>
+            <hint ref="jr:itext('/widgets-dev/repeat/display_widgets/my_trigger:hint')"/>
+          </trigger>
+        </group>
+      </repeat>
+    </group>
+  </h:body>
+</h:html>
