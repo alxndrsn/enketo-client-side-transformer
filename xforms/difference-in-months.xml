@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Test: difference-in-months</h:title>
+    <model>
+      <instance>
+        <difference-in-months id="difference-in-months" version="2015-11-23">
+          <patient_dob/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <note/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </difference-in-months>
+      </instance>
+      <bind nodeset="/difference-in-months/patient_dob" type="date"/>
+      <bind calculate="difference-in-months( /difference-in-months/patient_dob , today()) div 12" nodeset="/difference-in-months/patient_age_in_years" type="string"/>
+      <bind calculate="difference-in-months( /difference-in-months/patient_dob , today())" nodeset="/difference-in-months/patient_age_in_months" type="string"/>
+      <bind nodeset="/difference-in-months/note" readonly="true()" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/difference-in-months/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <input ref="/difference-in-months/patient_dob">
+      <label>Date of Birth</label>
+    </input>
+    <input ref="/difference-in-months/note">
+      <label>*Date of Birth:* <output value=" /difference-in-months/patient_dob "/>
+
+<output value=" /difference-in-months/patient_age_in_months "/> months old
+<output value=" /difference-in-months/patient_age_in_years "/> years old</label>
+    </input>
+  </h:body>
+</h:html>
