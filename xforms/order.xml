@@ -8,9 +8,11 @@
         <test_order id="test_order" version="2015-12-16">
           <note1/>
           <condition_pre/>
+          <z>z</z>
           <a/>
           <b>2</b>
           <c>0</c>
+          <d>d</d>
           <condition_post/>
           <note2/>
           <r_referral/>
@@ -26,9 +28,11 @@
       <bind nodeset="/test_order/meta/instanceID" calculate="concat('uuid:', uuid())" readonly="true()" type="string"/>
 
       <bind nodeset="/test_order/condition_pre" calculate="if ( /test_order/c  &lt; 2, 'true', 'false')" type="string"/>
+      <bind nodeset="/test_order/z" calculate=" /test_order/d " type="string"/>
       <bind nodeset="/test_order/a" calculate=" /test_order/c " type="string"/>
       <bind nodeset="/test_order/b" type="int"/>
       <bind nodeset="/test_order/c" calculate=" /test_order/b " type="string"/>
+      <bind nodeset="/test_order/d" calculate=" /test_order/a " type="string"/>
       <bind nodeset="/test_order/condition_post" calculate="if ( /test_order/c  &lt; 2, 'true', 'false')" type="string"/>
     </model>
   </h:head>
@@ -43,9 +47,11 @@
 **Calculations**
 
 /test-order/condition-pre = /test-order/c &lt; 2
+/test-order/z = /test-order/d
 /test-order/a = /test-order/c
 /test-order/b = set from field
 /test-order/c = /test-order/b
+/test-order/d = /test-order/a
 /test-order/condition-post = /test-order/c &lt; 2
       </label>
     </input>
@@ -59,9 +65,11 @@
 **Values**
 
 /test-order/condition-pre = <output value=" /test_order/condition_pre "/>
+/test-order/z = <output value=" /test_order/z "/>
 /test-order/a = <output value=" /test_order/a "/>
 /test-order/b = <output value=" /test_order/b "/>
 /test-order/c = <output value=" /test_order/c "/>
+/test-order/d = <output value=" /test_order/d "/>
 /test-order/condition-post = <output value=" /test_order/condition_post "/>
       </label>
     </input>
