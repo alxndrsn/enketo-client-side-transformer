@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Test: Order</h:title>
+    <model>
+
+      <instance>
+        <test_order id="test_order" version="2015-12-16">
+          <note1/>
+          <condition_pre/>
+          <a/>
+          <b>2</b>
+          <c>0</c>
+          <condition_post/>
+          <note2/>
+          <r_referral/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </test_order>
+      </instance>
+
+      <bind nodeset="/test_order/note1" readonly="true()" relevant="true()" type="string"/>
+      <bind nodeset="/test_order/note2" readonly="true()" relevant="true()" type="string"/>
+      <bind nodeset="/test_order/r_referral" readonly="true()" relevant=" /test_order/condition_pre  !=  /test_order/condition_post  or  /test_order/a  !=  /test_order/c " type="string"/>
+      <bind nodeset="/test_order/meta/instanceID" calculate="concat('uuid:', uuid())" readonly="true()" type="string"/>
+
+      <bind nodeset="/test_order/condition_pre" calculate="if ( /test_order/c  &lt; 2, 'true', 'false')" type="string"/>
+      <bind nodeset="/test_order/a" calculate=" /test_order/c " type="string"/>
+      <bind nodeset="/test_order/b" type="int"/>
+      <bind nodeset="/test_order/c" calculate=" /test_order/b " type="string"/>
+      <bind nodeset="/test_order/condition_post" calculate="if ( /test_order/c  &lt; 2, 'true', 'false')" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+
+    <input ref="/test_order/r_referral">
+      <label>&lt;div style=&quot;background:#e00900; color:#fff; &quot;&gt; &lt;h4 style=&quot;padding:0.5em; width:100%; text-align:center;&quot;&gt; &lt;i style=&quot;float:left;&quot; class=&quot;fa fa-warning&quot;&gt;&lt;/i&gt; Uh Oh….&lt;/h4&gt; &lt;/div&gt;</label>
+    </input>
+
+    <input ref="/test_order/note1">
+      <label>
+**Calculations**
+
+/test-order/condition-pre = /test-order/c &lt; 2
+/test-order/a = /test-order/c
+/test-order/b = set from field
+/test-order/c = /test-order/b
+/test-order/condition-post = /test-order/c &lt; 2
+      </label>
+    </input>
+
+    <input ref="/test_order/b">
+      <label>b</label>
+    </input>
+
+    <input ref="/test_order/note2">
+      <label>
+**Values**
+
+/test-order/condition-pre = <output value=" /test_order/condition_pre "/>
+/test-order/a = <output value=" /test_order/a "/>
+/test-order/b = <output value=" /test_order/b "/>
+/test-order/c = <output value=" /test_order/c "/>
+/test-order/condition-post = <output value=" /test_order/condition_post "/>
+      </label>
+    </input>
+
+  </h:body>
+</h:html>
