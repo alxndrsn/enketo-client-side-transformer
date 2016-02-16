@@ -974,6 +974,7 @@ XSLT Stylesheet that transforms OpenRosa style (X)Forms into valid HTMl5 forms
 
     <xsl:template name="constraint-and-required-msg">
         <xsl:param name="binding"/>
+        <xsl:apply-templates select="$binding/@jr:constraintMsg" />
         <xsl:if test="not($binding/@readonly = 'true()')">
             <xsl:if test="string-length($binding/@constraint) > 0">
                 <xsl:choose>
