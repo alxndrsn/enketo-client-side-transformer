@@ -357,6 +357,10 @@ XSLT Stylesheet that transforms OpenRosa style (X)Forms into valid HTMl5 forms
               </xsl:otherwise>
             </xsl:choose>
         </xsl:if>
+        <!-- turn rows attribute into an appearance (which is what it should have been in the first place imho)-->
+        <xsl:if test="./@rows">
+            <xsl:value-of select="concat('or-appearance-rows-', ./@rows, ' ')" />
+        </xsl:if>
     </xsl:template>
 
     <xsl:template match="xf:input | xf:upload | xf:item | xf:bind[@jr:preload] | xf:bind[@calculate]">
@@ -431,7 +435,7 @@ XSLT Stylesheet that transforms OpenRosa style (X)Forms into valid HTMl5 forms
                 </xsl:variable>
                 <xsl:variable name="element">
                     <xsl:choose>
-                        <xsl:when test="$binding/@type = 'string' and contains($appearance, 'multi-line') or contains($appearance, 'multiline') or contains($appearance, 'text-area') or contains($appearance, 'textarea')">
+                        <xsl:when test="$binding/@type = 'string' and contains($appearance, 'multi-line') or contains($appearance, 'multiline') or contains($appearance, 'text-area') or contains($appearance, 'textarea') or ./@rows">
                             <xsl:value-of select="string('textarea')" />
                         </xsl:when>
                         <xsl:otherwise>
